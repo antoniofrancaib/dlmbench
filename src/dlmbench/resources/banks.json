@@ -1,0 +1,3461 @@
+{
+  "schema_version": 1,
+  "banks": [
+    {
+      "id": "lm1b_data_train",
+      "aliases": [
+        "LM1B data train"
+      ],
+      "dataset": "lm1b",
+      "label": "Reference",
+      "kind": "reference",
+      "n_samples": 1024,
+      "sha256": "e2663588caad65c738cea12ee587f4cae9f989287843268c70024b7b638077af",
+      "bytes": null,
+      "path": null,
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [],
+      "provenance": {
+        "status": "unavailable-reference",
+        "family": "reference",
+        "control_type": "primary",
+        "control_name": "reference",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 588,
+          "selected_id": "lm1b-lm1b_data_train-000588"
+        },
+        "limitations": [
+          "Original reference JSONL bytes are not present in the recorded source snapshot; catalog identity is recorded, but byte reproduction is unavailable."
+        ],
+        "scientific_metadata": {
+          "sequence_length": null,
+          "tokenizer_id": null,
+          "tokenizer_revision": null,
+          "source_manifest_sha256": null,
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "lm1b_duo_1024_nfe",
+      "aliases": [
+        "LM1B duo 1024 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "Duo",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "7e104b093dd42bd9c8584dc083290fb359691ccb192361bc25a3b3aa2d56abee",
+      "bytes": 654700,
+      "path": "samples/lm1b/lm1b_duo_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_duo_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 651,
+          "selected_id": 651
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "dcef1614658a8f2e773631b0266395c6793e5b011bcb0e378d304cc78f17a6f9",
+          "checkpoint_digest": "b11ee9a4cc533435adb9e1149cff74aec0872a9df2a459b4ab58f1867f6cddfb",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_flm_1024_nfe",
+      "aliases": [
+        "LM1B flm 1024 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "FLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "a60278722293876b31ccd5e3f5db2d4b07a7adae5f144609beb85c46991e1649",
+      "bytes": 634174,
+      "path": "samples/lm1b/lm1b_flm_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_flm_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 50,
+          "selected_id": 50
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "472d1678888ed96ae3e6abfe04c0f4282974932c5f02bd431e4e1606e9d34599",
+          "checkpoint_digest": "3879d0195f556aa4995fe85bf7fd1a1ec3c45aef439d18da40169c656e02a003",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_fmlm_1_nfe",
+      "aliases": [
+        "LM1B fmlm 1 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "fe851292fdb01a34e7025db2fa440789b0f6760a6b3093c4b395337aa06ea355",
+      "bytes": 576771,
+      "path": "samples/lm1b/lm1b_fmlm_1_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_fmlm_1_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 523,
+          "selected_id": 523
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "d978f899711caa3ffd5a28c488d67ab1a26ef0d8c9c29fb05d312cb5e76271aa",
+          "checkpoint_digest": "122bbba9ec214af4776f8624cf42eb2787961cce9ed4284586886713adb64de8",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_fmlm_32_nfe",
+      "aliases": [
+        "LM1B fmlm 32 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "b2d0217629df8f5b9aaca838b2d2c312ababd9e98ae6188614965a788f5c9f87",
+      "bytes": 604049,
+      "path": "samples/lm1b/lm1b_fmlm_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_fmlm_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 515,
+          "selected_id": 515
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "d8932504e0f273be899f760da7cce5f3e50d55c180023ea80a2693ba09b586aa",
+          "checkpoint_digest": "122bbba9ec214af4776f8624cf42eb2787961cce9ed4284586886713adb64de8",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_fmlm_4_nfe",
+      "aliases": [
+        "LM1B fmlm 4 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "95fe064644c8a5cef01f3505e69a2f9165bbdc9e73969ec779f194f617c79769",
+      "bytes": 597080,
+      "path": "samples/lm1b/lm1b_fmlm_4_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_fmlm_4_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 4,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 518,
+          "selected_id": 518
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "788c29862834f656a021130d2c89f74123eef24e439742810b14de26766e799e",
+          "checkpoint_digest": "122bbba9ec214af4776f8624cf42eb2787961cce9ed4284586886713adb64de8",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_langflow_1024_nfe",
+      "aliases": [
+        "LM1B langflow 1024 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "LangFlow",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "9bf2d512b772a4ea7d5a4366332d272a4d2272f77246386bdb403da5e6670e80",
+      "bytes": 599691,
+      "path": "samples/lm1b/lm1b_langflow_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_langflow_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "LangFlow",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 713,
+          "selected_id": 713
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "02a66a93888a728af5e228c7dd93680bb69dfe798eacf69bc3a67da87a350988",
+          "checkpoint_digest": "b111b5141379bde1bc8531278a2d144bc753cf3b100ed32c8a917f2ed0c025d2",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_langflow_128_nfe",
+      "aliases": [
+        "LM1B langflow 128 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "LangFlow",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "ba315f5ee324e74402d614897b63f3fbe44cc019cfaffb58e24afb11d3524516",
+      "bytes": 602904,
+      "path": "samples/lm1b/lm1b_langflow_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_langflow_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "LangFlow",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 872,
+          "selected_id": 872
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "d6e12b7464de3e322d267f3ca66fae096724eece5b2af113605aadd87a1e01b2",
+          "checkpoint_digest": "b111b5141379bde1bc8531278a2d144bc753cf3b100ed32c8a917f2ed0c025d2",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_mdlm_1024_nfe",
+      "aliases": [
+        "LM1B mdlm 1024 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "MDLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "3b5b278cbcf4fa7cf803502112c1cb2e5355902ae6dca750f8d0240661236a7a",
+      "bytes": 655886,
+      "path": "samples/lm1b/lm1b_mdlm_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_mdlm_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "MDLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 752,
+          "selected_id": 752
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "1bae2d03ef173039794ecbdb811f0bfe400518e80b218114d70a3d0889553dd6",
+          "checkpoint_digest": "d42739e5a99bbd7c0f604dff7fe4c9ab12348b475e30f1d807e70ef32249e514",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_mirror_5000",
+      "aliases": [
+        "LM1B mirror 5000"
+      ],
+      "dataset": "lm1b",
+      "label": "Mirror",
+      "kind": "constructed",
+      "n_samples": 1024,
+      "sha256": "4258a9be684bd53b5698ac3847001c8436540ee8757f43e028943a91c0c0a575",
+      "bytes": 1633924,
+      "path": "samples/lm1b/lm1b_mirror_5000/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_mirror_5000/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "mirror",
+        "control_type": "constructed-control",
+        "control_name": "mirror",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 718,
+          "selected_id": "lm1b-lm1b_mirror_5000-000718"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "source_manifest_sha256": "651aed53f71a671db841892771aa2f7830aa78dfdb0985c9a0e57e184574f194",
+          "checkpoint_digest": null,
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_periodic_k_64",
+      "aliases": [
+        "LM1B periodic k 64"
+      ],
+      "dataset": "lm1b",
+      "label": "Periodic",
+      "kind": "constructed",
+      "n_samples": 1024,
+      "sha256": "0808b0ffe88daecf0cb9751fedd670e85ee9d3d53502e52e2c25569ba8ef16f3",
+      "bytes": 1460224,
+      "path": "samples/lm1b/lm1b_periodic_k_64/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_periodic_k_64/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "periodic_k",
+        "control_type": "constructed-control",
+        "control_name": "periodic",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 483,
+          "selected_id": "lm1b-lm1b_periodic_k_64-000483"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "source_manifest_sha256": "d374408f68597bc6141b1a1ca432107ceed2d3cd0235cb599f9f3a70284bf21a",
+          "checkpoint_digest": null,
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_phrase_bank_1000",
+      "aliases": [
+        "LM1B phrase bank 1000"
+      ],
+      "dataset": "lm1b",
+      "label": "Phrase bank",
+      "kind": "constructed",
+      "n_samples": 1024,
+      "sha256": "b893cf1f7dd4a0671b8bd74dbc6e4852555bebf21e98756245121cc0c8ba81e3",
+      "bytes": 1591441,
+      "path": "samples/lm1b/lm1b_phrase_bank_1000/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_phrase_bank_1000/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "phrase_bank",
+        "control_type": "constructed-control",
+        "control_name": "phrase_bank",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 21,
+          "selected_id": "lm1b-lm1b_phrase_bank_1000-000021"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "source_manifest_sha256": "31fd7654bf4101e1114ad9fb2b933b3ad7a50fad402be21eb8073ae8af45b636",
+          "checkpoint_digest": null,
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_rdlm_1000_nfe",
+      "aliases": [
+        "LM1B rdlm 1000 nfe"
+      ],
+      "dataset": "lm1b",
+      "label": "RDLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "cf760a62da314639072d51570d23a897e4f5a2bed48ce0c5b3f4e484e60225ae",
+      "bytes": 659467,
+      "path": "samples/lm1b/lm1b_rdlm_1000_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_rdlm_1000_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "other",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1000,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 581,
+          "selected_id": 581
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "bert-base-uncased",
+          "tokenizer_revision": "local-sha256:7fad9202709f07f817e9ffebbbadcb1d2a6b798d13cdc8919325b677b3636c58",
+          "source_manifest_sha256": "43e9e40ed58dad170765eb9257ce41743f72c265474371c104968fbe591a451f",
+          "checkpoint_digest": "3319acacbd41ac4bf6bf42840dfd22cbebcd8e45d975d5225f114b6ee9cafd81",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "lm1b_topk_iid_k32",
+      "aliases": [
+        "LM1B topk iid k32"
+      ],
+      "dataset": "lm1b",
+      "label": "Top-k IID",
+      "kind": "constructed",
+      "n_samples": 1024,
+      "sha256": "390d3835f7fa74adf8a23db8d8b811e8a857b2cc4bfc7461755db0b3d16776be",
+      "bytes": 779646,
+      "path": "samples/lm1b/lm1b_topk_iid_k32/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/lm1b/lm1b_topk_iid_k32/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "topk_iid",
+        "control_type": "constructed-control",
+        "control_name": "topk_iid",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 822,
+          "selected_id": "lm1b-lm1b_topk_iid_k32-000822"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 128,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "source_manifest_sha256": "1d5ba88a84afcc80bd44834408d81b215e7f02c2c49e41bf46353902c9ad14dc",
+          "checkpoint_digest": null,
+          "seed": 0
+        }
+      }
+    },
+    {
+      "id": "owt_ar_base",
+      "aliases": [
+        "OpenWebText ar base"
+      ],
+      "dataset": "owt",
+      "label": "AR baseline",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "7a533df5bd765f86e040cf8b62f219d06e69e6316bbd310d8300eea68dc0a58b",
+      "bytes": 4761745,
+      "path": "samples/owt/owt_ar_base/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_ar_base/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "AR baseline",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 578,
+          "selected_id": 578
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "5934ac483586fa400a92366981ec7775c334ba81d3291a38353bbfe6050fcb5c",
+          "checkpoint_digest": "74223bba9896ddc3ad08c52a503de0d40f1fd80b90502fb71e474a07b96ac8d2",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_data_train",
+      "aliases": [
+        "OpenWebText data train"
+      ],
+      "dataset": "owt",
+      "label": "Reference",
+      "kind": "reference",
+      "n_samples": 1024,
+      "sha256": "04a6ea24d31058ffe6d4d9b9295ee0e48c0cda087036007ae04cdc3c481f41fe",
+      "bytes": null,
+      "path": null,
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [],
+      "provenance": {
+        "status": "unavailable-reference",
+        "family": "reference",
+        "control_type": "primary",
+        "control_name": "reference",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 477,
+          "selected_id": "owt-owt_data_train-000477"
+        },
+        "limitations": [
+          "Original reference JSONL bytes are not present in the recorded source snapshot; catalog identity is recorded, but byte reproduction is unavailable."
+        ],
+        "scientific_metadata": {
+          "sequence_length": null,
+          "tokenizer_id": null,
+          "tokenizer_revision": null,
+          "source_manifest_sha256": null,
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "owt_di4c_sdtt6_16_nfe",
+      "aliases": [
+        "OpenWebText di4c sdtt6 16 nfe"
+      ],
+      "dataset": "owt",
+      "label": "DI4C",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "1c83ed74f40d3afe8697b8700ad058facee18c9df29e60fcb7bfeff326b7a498",
+      "bytes": 4922275,
+      "path": "samples/owt/owt_di4c_sdtt6_16_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_di4c_sdtt6_16_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "DI4C",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 16,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 426,
+          "selected_id": 426
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "2b5bb2f1d6c7fd106d281047741546ffe833b2ed8f4734b29643674750bef972",
+          "checkpoint_digest": "aa7b1639da28e8ec6809c15e98173fd0b8c6b6abb6d6e8d67f96085809c3f7ac",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_di4c_sdtt7_16_nfe",
+      "aliases": [
+        "OpenWebText di4c sdtt7 16 nfe"
+      ],
+      "dataset": "owt",
+      "label": "DI4C",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "9dde3de08a5beffb36cd7c3d96b3f9dce4d1e0754e7d6464cdb099a842adc22b",
+      "bytes": 5014749,
+      "path": "samples/owt/owt_di4c_sdtt7_16_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_di4c_sdtt7_16_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "DI4C",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 16,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 172,
+          "selected_id": 172
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "44e2e607575c7e334c75e33a38ef0890ee083a9a7d965e666c6fcfe3f51b0422",
+          "checkpoint_digest": "4af61572dc82fe012ce395a2e4e4be0585ea09076597ba1f7241ca196b97ecb0",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_duo_base_1024_nfe",
+      "aliases": [
+        "OpenWebText duo base 1024 nfe"
+      ],
+      "dataset": "owt",
+      "label": "Duo",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "581f702bae92041ea7eaa746eefba893e199f31a276a0104e4ab990f14817f24",
+      "bytes": 4606427,
+      "path": "samples/owt/owt_duo_base_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_duo_base_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 799,
+          "selected_id": 799
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "a4782ffb140fc47e73fe9a189cc74c252ef3ef9b006b30161970782bc9b28509",
+          "checkpoint_digest": "ea8edb134515121c8d998b43c08517a53b1d6797aed9d80117f7322d10316c4c",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_flm_1024_nfe",
+      "aliases": [
+        "OpenWebText flm 1024 nfe"
+      ],
+      "dataset": "owt",
+      "label": "FLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "34b405717a098608ec51c675137622e43b0f6b492028dd5a30fa195b9fc40a95",
+      "bytes": 4379935,
+      "path": "samples/owt/owt_flm_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_flm_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 439,
+          "selected_id": 439
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "54d811c287f658969bb3db211a99730f5ae2cf74a43494fa9246b446dd0d9c5d",
+          "checkpoint_digest": "2b6b2b4f64f7463713a020158b61474092773b39985baed1cf9442bd425ca23f",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_fmlm_1_nfe",
+      "aliases": [
+        "OpenWebText fmlm 1 nfe"
+      ],
+      "dataset": "owt",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "2f2e3cc5059e589fb7186d5c98daf5766237f784183cb2681b2021502bcd606d",
+      "bytes": 4159493,
+      "path": "samples/owt/owt_fmlm_1_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_fmlm_1_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 409,
+          "selected_id": 409
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "23e29bd4291fb0cfd9a51e5c5e36efd7f63213e76f0c438447818a2d8d17992a",
+          "checkpoint_digest": "9700bffdd474a681e3d12ea5496c970c60304b34c28114118b9372464b0e0981",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_fmlm_32_nfe",
+      "aliases": [
+        "OpenWebText fmlm 32 nfe"
+      ],
+      "dataset": "owt",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "eae0e16c5579c0285320091c941ad8d5140dad68c04f6b678f9995bc8fe143ce",
+      "bytes": 4540250,
+      "path": "samples/owt/owt_fmlm_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_fmlm_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 517,
+          "selected_id": 517
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "e31a3ef160c15fbcc03c607cf1ef9c6d3f54c061b641c68fd9711174267de3a8",
+          "checkpoint_digest": "9700bffdd474a681e3d12ea5496c970c60304b34c28114118b9372464b0e0981",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_fmlm_4_nfe",
+      "aliases": [
+        "OpenWebText fmlm 4 nfe"
+      ],
+      "dataset": "owt",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "17508b201f080170389f56660a3e2304c549861cee61f3a388724cf43da996a4",
+      "bytes": 4548047,
+      "path": "samples/owt/owt_fmlm_4_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_fmlm_4_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 4,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 242,
+          "selected_id": 242
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "d8ae8881c8c831e722e7a17003540fcb3ef1fda2ebb774387ef5c336007c17c1",
+          "checkpoint_digest": "9700bffdd474a681e3d12ea5496c970c60304b34c28114118b9372464b0e0981",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_langflow_1024_nfe",
+      "aliases": [
+        "OpenWebText langflow 1024 nfe"
+      ],
+      "dataset": "owt",
+      "label": "LangFlow",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "d907c2d665174f0ef2145edc03bce4527541396e9828b052fd37c104ffe6a698",
+      "bytes": 4553624,
+      "path": "samples/owt/owt_langflow_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_langflow_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "LangFlow",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 452,
+          "selected_id": 452
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "4e4b4af699a8798d91e067512dbf41ff7ef589a2b4368101d18637bce29b7081",
+          "checkpoint_digest": "9dcc2573297d9f0ad91cb08d3469d141817d7bd3b11a2a7f332ff0f6a58e02a1",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_mdlm_1024_nfe",
+      "aliases": [
+        "OpenWebText mdlm 1024 nfe"
+      ],
+      "dataset": "owt",
+      "label": "MDLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "1b79aca4bd23115f4504c022380106ced37244bc9982761ad16b089f836f4131",
+      "bytes": 4771082,
+      "path": "samples/owt/owt_mdlm_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_mdlm_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "MDLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 349,
+          "selected_id": 349
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "32df8a87a69a7e348b406612afed3a48e0d300500d81ce86463cd4fd2dd453da",
+          "checkpoint_digest": "74bf9b853206e73b4811d8127e836c2cdcfb7a23f8e04ad7d1356a58f1138d27",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_mirror_5000",
+      "aliases": [
+        "OpenWebText mirror 5000"
+      ],
+      "dataset": "owt",
+      "label": "Mirror",
+      "kind": "constructed",
+      "n_samples": 1024,
+      "sha256": "217b1f171b9d8aea28e177e9996ea2d0c8df5a0ff4f145f99fdf2d4bf4c4b0fe",
+      "bytes": 9982719,
+      "path": "samples/owt/owt_mirror_5000/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_mirror_5000/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "mirror",
+        "control_type": "constructed-control",
+        "control_name": "mirror",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 577,
+          "selected_id": "owt-owt_mirror_5000-000577"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "source_manifest_sha256": "19e50bab5837af0d29e53a779cbfeb7c2db975b4e9f30eefb2cba34096328315",
+          "checkpoint_digest": null,
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_periodic_k_400",
+      "aliases": [
+        "OpenWebText periodic k 400"
+      ],
+      "dataset": "owt",
+      "label": "Periodic",
+      "kind": "constructed",
+      "n_samples": 1024,
+      "sha256": "50c4a1ddb487eac5a5bdb7398755a62e99b814e61e7b59fddaefb11737882101",
+      "bytes": 9990144,
+      "path": "samples/owt/owt_periodic_k_400/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_periodic_k_400/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "periodic_k",
+        "control_type": "constructed-control",
+        "control_name": "periodic",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 962,
+          "selected_id": "owt-owt_periodic_k_400-000962"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "source_manifest_sha256": "f1cf4c126ad9ba811013f11d524a3fcc4701121c900ac96b27051dcdf57816a2",
+          "checkpoint_digest": null,
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_phrase_bank_5000",
+      "aliases": [
+        "OpenWebText phrase bank 5000"
+      ],
+      "dataset": "owt",
+      "label": "Phrase bank",
+      "kind": "constructed",
+      "n_samples": 1024,
+      "sha256": "629b28c402390c8654396755ecfd5b67597dbe42b1aa60d360087ddf706ac808",
+      "bytes": 9094547,
+      "path": "samples/owt/owt_phrase_bank_5000/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_phrase_bank_5000/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "phrase_bank",
+        "control_type": "constructed-control",
+        "control_name": "phrase_bank",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 594,
+          "selected_id": "owt-owt_phrase_bank_5000-000594"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "source_manifest_sha256": "0d57fa60b99fd1b26b9de586d3de93ccce5b73000ba88409d8b6101e587b2afd",
+          "checkpoint_digest": null,
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_sdtt_kld_r7_8_nfe",
+      "aliases": [
+        "OpenWebText sdtt kld r7 8 nfe"
+      ],
+      "dataset": "owt",
+      "label": "SDTT Teacher",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "087139d14a5d349205e8fcc2e3ce5cb2e2437008fb4049e5b0c1c064b565490b",
+      "bytes": 4942788,
+      "path": "samples/owt/owt_sdtt_kld_r7_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_sdtt_kld_r7_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "SDTT",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 525,
+          "selected_id": 525
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "cebfa46fdc1b44621e72c54fc1d6dcc68bad2f85049cc061f49360298f056d6e",
+          "checkpoint_digest": "33338a0cebd25993fc455447248563d00fe3414b66ce29ca0d7f3529f4d6218d",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_sdtt_mdlm_teacher_1024_nfe",
+      "aliases": [
+        "OpenWebText sdtt mdlm teacher 1024 nfe"
+      ],
+      "dataset": "owt",
+      "label": "SDTT Teacher",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "f4557c25d6e9174fc9d5f33f35ff84ec8f6bcc1435a5bf0eb1a5c03a67c4ad52",
+      "bytes": 4575098,
+      "path": "samples/owt/owt_sdtt_mdlm_teacher_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_sdtt_mdlm_teacher_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "SDTT",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 463,
+          "selected_id": 463
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "4e971147c1d7ad5408a38ede2ca985c745994137ec88a6d9209b8f9f9da9131d",
+          "checkpoint_digest": "c8fad2a433822afe692402a43a40377f62c730507155f06054d0171af7a506eb",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_sedd_1024_nfe",
+      "aliases": [
+        "OpenWebText sedd 1024 nfe"
+      ],
+      "dataset": "owt",
+      "label": "SEDD",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "b8c55ee56ca2e01261f7adf0cd45fad85445ff2bc74e9825064670527a46ea41",
+      "bytes": 4728658,
+      "path": "samples/owt/owt_sedd_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_sedd_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "SEDD",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 757,
+          "selected_id": 757
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "045a05ce8325815124316b3118fc03baaf6099006fb73208d9e5b8b0a465aadd",
+          "checkpoint_digest": "11ec99693f1f073b3e8df88db6d2f32705e72a7c08b33c5f2f54c8dc696693b1",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_topk_iid_k64",
+      "aliases": [
+        "OpenWebText topk iid k64"
+      ],
+      "dataset": "owt",
+      "label": "Top-k IID",
+      "kind": "constructed",
+      "n_samples": 1024,
+      "sha256": "0ea0953a73dd444cd9ff8b8138bbc1d6bab2ef5be21850d857c4e6ca3127361b",
+      "bytes": 3282769,
+      "path": "samples/owt/owt_topk_iid_k64/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_topk_iid_k64/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "topk_iid",
+        "control_type": "constructed-control",
+        "control_name": "topk_iid",
+        "nfe": null,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 8,
+          "selected_id": "owt-owt_topk_iid_k64-000008"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+          "source_manifest_sha256": "20c85d97fcde1239757ccd8df3e11dc884e0ccfb607607d5ec66b29d33301239",
+          "checkpoint_digest": null,
+          "seed": 0
+        }
+      }
+    },
+    {
+      "id": "owt_v2_cobit_m_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "cobit",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "175b003da43f365ecd78268a3c03c16e09f1ef2ec7334e16be6d7cc3a1ef2b26",
+      "bytes": 4677950,
+      "path": "samples/owt/owt_v2_cobit_m_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_cobit_m_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "cobit",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 19,
+          "selected_id": "owt-owt_v2_cobit_m_128_nfe-000019"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": null,
+          "tokenizer_revision": null,
+          "source_manifest_sha256": "b88c40faff8b7fc594899d8d89233d073ec479cf65ee02d7d9110d39fb79b672",
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "owt_v2_cobit_m_256_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "CoBit-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "0482d3b8b886f29f17ab9141b2302a635b54b2f3523fb2d523be18d36e89c2ee",
+      "bytes": 4750009,
+      "path": "samples/owt/owt_v2_cobit_m_256_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_cobit_m_256_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "CoBit",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 256,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 23,
+          "selected_id": 23
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "b0182c11e4f71fb01f935dfa28f84ba20c272297e6e3dd6a5d39db3633b5a820",
+          "checkpoint_digest": "bb77896e56a48546da23d6e5b20fc5834d766d5f569f4315ad4c2156d9d5270e",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_cobit_m_512_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "CoBit-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "af81d01bef3c03554afa370330e12067b900c45d2b2f583525accecd670d37fe",
+      "bytes": 4784498,
+      "path": "samples/owt/owt_v2_cobit_m_512_nfe/samples.jsonl",
+      "suites": [
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_cobit_m_512_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "CoBit",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 512,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 945,
+          "selected_id": 945
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "2536cf19f6c7330eddd47886c409402772000b7052186ba21a051b77f1a96992",
+          "checkpoint_digest": "bb77896e56a48546da23d6e5b20fc5834d766d5f569f4315ad4c2156d9d5270e",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_cobit_s_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "cobit",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "d39b2d34abf33783c4860a523be3d94c8f816ece710811677fffdfc38c5a768e",
+      "bytes": 4595250,
+      "path": "samples/owt/owt_v2_cobit_s_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_cobit_s_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "cobit",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 1018,
+          "selected_id": "owt-owt_v2_cobit_s_128_nfe-001018"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": null,
+          "tokenizer_revision": null,
+          "source_manifest_sha256": "d53bc626e342d86f8b70908129ccad9adc26a0ca4b6a83288199b8e34d3e53ad",
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "owt_v2_cobit_s_256_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "CoBit-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "20ef8de1067e9cd9a8fe27e0c19c12d8e1cf0836d9cab6929d8a49a51ff5fbbd",
+      "bytes": 4624508,
+      "path": "samples/owt/owt_v2_cobit_s_256_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_cobit_s_256_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "CoBit",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 256,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 943,
+          "selected_id": 943
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "8d6c202bc3151132335cdd729aafe4138c54aa822fa2cb3762ab0f4b97df04d3",
+          "checkpoint_digest": "51d0e892ef68f8a040f8782d99b341d90a4381f28e4b131e8fb6458896b5d687",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_cobit_s_512_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "cobit",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "80761eff4bb11f328d97f6a69211ddbf2b88062863c9344aa2de151a991622d2",
+      "bytes": 4439674,
+      "path": "samples/owt/owt_v2_cobit_s_512_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_cobit_s_512_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "cobit",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 512,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 388,
+          "selected_id": "owt-owt_v2_cobit_s_512_nfe-000388"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": null,
+          "tokenizer_revision": null,
+          "source_manifest_sha256": "deb39bdf228be2b64b4b9b1024b8d4020b94ab953abe37b44e709632c184e6e7",
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "owt_v2_duo_base_1024_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Duo",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "581f702bae92041ea7eaa746eefba893e199f31a276a0104e4ab990f14817f24",
+      "bytes": 4606427,
+      "path": "samples/owt/owt_v2_duo_base_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_duo_base_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 799,
+          "selected_id": 799
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "81dc77f5c3af7f11878a8cce6345470795507587e6d28292159602288d426555",
+          "checkpoint_digest": "ea8edb134515121c8d998b43c08517a53b1d6797aed9d80117f7322d10316c4c",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_duo_base_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Duo",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "a28f4050c65c09e64b595d6959435d15e00322cb0490646eded96e6b62845691",
+      "bytes": 4660510,
+      "path": "samples/owt/owt_v2_duo_base_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_duo_base_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 410,
+          "selected_id": 410
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "96adb31c63dd3a0d3b4c10748d07329111c424cf78f8c300e82e3a4778a39acc",
+          "checkpoint_digest": "ea8edb134515121c8d998b43c08517a53b1d6797aed9d80117f7322d10316c4c",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_duo_base_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Duo",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "b70f9fa7da98ac94196d1a1584828a20ee62ffb1751f8a1a8bfaebf9b6af043a",
+      "bytes": 4655334,
+      "path": "samples/owt/owt_v2_duo_base_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_duo_base_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 157,
+          "selected_id": 157
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "6dca9aac3e3d3b2d2872a52ce40ae504b55b990bf01b7902697d77571819b6de",
+          "checkpoint_digest": "ea8edb134515121c8d998b43c08517a53b1d6797aed9d80117f7322d10316c4c",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_duo_base_512_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Duo",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "f446670e86d1ce2e5d97a3747e243f229d6ccca655915d89464658e66f5c9414",
+      "bytes": 4624843,
+      "path": "samples/owt/owt_v2_duo_base_512_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_duo_base_512_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 512,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 604,
+          "selected_id": 604
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "45911d561f01d395aea218cee3e5ee88f332978f9b573b6cd37477117b50b66c",
+          "checkpoint_digest": "ea8edb134515121c8d998b43c08517a53b1d6797aed9d80117f7322d10316c4c",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_duo_base_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Duo",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "627c0f0939e36d7ba937a00b9dc67e7e170a891d9db3b770224da74cf4a1be22",
+      "bytes": 4509092,
+      "path": "samples/owt/owt_v2_duo_base_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_duo_base_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 854,
+          "selected_id": 854
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "b05317f9f9e179af1cd2146c1e752645b333611505240f964f1b9c895c975b5b",
+          "checkpoint_digest": "ea8edb134515121c8d998b43c08517a53b1d6797aed9d80117f7322d10316c4c",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_duo_distilled_16_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Duo distilled",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "e2c60095f98b4138093d596afc29e2e444614ae299e70249757bafc0e345044f",
+      "bytes": 4713387,
+      "path": "samples/owt/owt_v2_duo_distilled_16_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_duo_distilled_16_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo distilled",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 16,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 153,
+          "selected_id": 153
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "1b42481051a4e55044aaa10979c9252c82648e3e7d615c880545f53335ee1555",
+          "checkpoint_digest": "23dba8a6cc97500f3798cb35484c8219a6c8a611b38f9dc92e2ae23946f593a9",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_duo_distilled_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Duo distilled",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "21d6b6f40e1fd4dfe734368fea0f51a23170f1692dce005a0202b38f056d98d7",
+      "bytes": 4687579,
+      "path": "samples/owt/owt_v2_duo_distilled_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_duo_distilled_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo distilled",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 883,
+          "selected_id": 883
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "f87b88df626ce65dee8a897f5870a5db5a434aa742a35b706ab62516534732cc",
+          "checkpoint_digest": "23dba8a6cc97500f3798cb35484c8219a6c8a611b38f9dc92e2ae23946f593a9",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_duo_distilled_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Duo distilled",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "39f1b77e726be785a8d4f13ce9e4769a5bda7eeccd7b5b6485d0765ed91967d1",
+      "bytes": 4578574,
+      "path": "samples/owt/owt_v2_duo_distilled_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_duo_distilled_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "Duo distilled",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 520,
+          "selected_id": 520
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "1817eaccc99720c74291f3ec65d99425acd52bd899c733027f264e95364023c4",
+          "checkpoint_digest": "23dba8a6cc97500f3798cb35484c8219a6c8a611b38f9dc92e2ae23946f593a9",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_b_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "beec89c849828c1e489c6aff8ef0ce53b60f31831c2f8d54eb43a8510c562986",
+      "bytes": 4421992,
+      "path": "samples/owt/owt_v2_elf_b_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_b_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 612,
+          "selected_id": 612
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "7668850dcfb7eb3ecab0b1281cf3b65d03e03fddabde6a8234e207597efe9cf6",
+          "checkpoint_digest": "808cc3dc24253f03e9418835b1bf5e5ed716e3b1a43c9c11d53ae70f4eba1e00",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_b_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "155dd4b33bc8b270a9b13964beedfc8e840d4604397bf4052b0301a59a5654ca",
+      "bytes": 4596699,
+      "path": "samples/owt/owt_v2_elf_b_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_b_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 24,
+          "selected_id": 24
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "040394734398668dfd5fe6d219ca9fc5372766c8de1e2167dcbfe3941ac80523",
+          "checkpoint_digest": "808cc3dc24253f03e9418835b1bf5e5ed716e3b1a43c9c11d53ae70f4eba1e00",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_b_64_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "fa6173e5b9c28e3eec32f62e81a133dfaa47b456d1f5ad632146c458faf2d337",
+      "bytes": 4495215,
+      "path": "samples/owt/owt_v2_elf_b_64_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_b_64_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 64,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 491,
+          "selected_id": 491
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "7bfc6d4c607b9f918e769086e2db9132d79fcb6387b93694d5a534e70c176ab7",
+          "checkpoint_digest": "808cc3dc24253f03e9418835b1bf5e5ed716e3b1a43c9c11d53ae70f4eba1e00",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_b_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "db2a238660d1607d839fe7c15dd133ab21c4815ad0ad6ec4b5d840b88ae0a80f",
+      "bytes": 4799074,
+      "path": "samples/owt/owt_v2_elf_b_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_b_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 30,
+          "selected_id": 30
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "7dd5b23a06cd2f22d7d0383d58b786293e940bb113d857321192c8d15373f9fd",
+          "checkpoint_digest": "808cc3dc24253f03e9418835b1bf5e5ed716e3b1a43c9c11d53ae70f4eba1e00",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_l_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "5c96eee660c82a0b8038a3970de93a8909052abb41b8a9f27c51b39f5fea2e87",
+      "bytes": 4472715,
+      "path": "samples/owt/owt_v2_elf_l_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_l_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 143,
+          "selected_id": 143
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "40719411715dae3b459e208d2556fffd4933ab9eb5ea45ba09c3df7c69675a3d",
+          "checkpoint_digest": "499cff8e0d9f7167beaaa860b7337a6868d5a05b7f5cc3919167fcd1a16a885e",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_l_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "f504867cdffc377552ad236e813a3b831e6728e1d6c3f54c8c01022f1795391d",
+      "bytes": 4588994,
+      "path": "samples/owt/owt_v2_elf_l_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_l_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 630,
+          "selected_id": 630
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "e608299022014193a19e49ebb84d637a11233397c1754fc11ef32c88c958bfda",
+          "checkpoint_digest": "499cff8e0d9f7167beaaa860b7337a6868d5a05b7f5cc3919167fcd1a16a885e",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_l_64_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "1fe61aa34fa6d4c2800490d0a347658ce6bc7a4385b4f743d19e091aeeb47325",
+      "bytes": 4523638,
+      "path": "samples/owt/owt_v2_elf_l_64_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_l_64_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 64,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 271,
+          "selected_id": 271
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "dc1bf9c35cdf292d595e08439eb63919e98e46f1fb60de9d11a28b21116a02d5",
+          "checkpoint_digest": "499cff8e0d9f7167beaaa860b7337a6868d5a05b7f5cc3919167fcd1a16a885e",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_l_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "0d5c54c8b96ed75348e2842524d3dbffe6e03ba5c2c42f408ba1cfc1dc2ac55e",
+      "bytes": 4705251,
+      "path": "samples/owt/owt_v2_elf_l_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_l_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 300,
+          "selected_id": 300
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "2ea79458fdfbff0a9c8cbc8e2ce0a1cd366bb30f40c554959bc5b218bc6644c7",
+          "checkpoint_digest": "499cff8e0d9f7167beaaa860b7337a6868d5a05b7f5cc3919167fcd1a16a885e",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_m_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "16ea6daeb24fc3613828cc5076979e371f9365519fdc3577db162eb308ee7180",
+      "bytes": 4428348,
+      "path": "samples/owt/owt_v2_elf_m_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_m_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 343,
+          "selected_id": 343
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "45b21458a23bcf49c6b717278beba1d2cf11386886a72f9a228b6b2d695e34ef",
+          "checkpoint_digest": "ec941c571c38dd58439a9460191bd0cc6ea245ea5e6c64b2ae95413f33f532fc",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_m_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "3fc2041f8ad3dfe36713c7b4d86cc407032b4d1de760e49a9eaf6fdce8e1cec3",
+      "bytes": 4574746,
+      "path": "samples/owt/owt_v2_elf_m_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_m_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 467,
+          "selected_id": 467
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "4d60e9c9ba5aec9ebb4a17486b5dab3ade33018e85bff0bca9fe785b758fc117",
+          "checkpoint_digest": "ec941c571c38dd58439a9460191bd0cc6ea245ea5e6c64b2ae95413f33f532fc",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_m_64_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "5663500f2d51c7b3673dc80aeec1509c87a734bfd40dc1c6c08bb174976f148c",
+      "bytes": 4489727,
+      "path": "samples/owt/owt_v2_elf_m_64_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_m_64_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 64,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 105,
+          "selected_id": 105
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "e0b1d6329ef5f732fec7933e6774e37be0507ad6567a759e1a2e856c9b18b6db",
+          "checkpoint_digest": "ec941c571c38dd58439a9460191bd0cc6ea245ea5e6c64b2ae95413f33f532fc",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_elf_m_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "ELF-M",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "e85143e9831c124109f486caec7f5dff1aec12dfefec8c8ea9f3db1aafb0d3f1",
+      "bytes": 4562143,
+      "path": "samples/owt/owt_v2_elf_m_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_elf_m_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "ELF",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 451,
+          "selected_id": 451
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "t5-small",
+          "tokenizer_revision": "local-sha256:ef6366ed2936c8099c2a571eb2167b084a2c750711947bfdccdd24c678235cbf",
+          "source_manifest_sha256": "74becc5267c3b38164fbbf56f14d9de9318bd90a93b29c85a61c480c0e7481d9",
+          "checkpoint_digest": "ec941c571c38dd58439a9460191bd0cc6ea245ea5e6c64b2ae95413f33f532fc",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_flm_1024_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "34b405717a098608ec51c675137622e43b0f6b492028dd5a30fa195b9fc40a95",
+      "bytes": 4379935,
+      "path": "samples/owt/owt_v2_flm_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_flm_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 439,
+          "selected_id": 439
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "c8faf284f042284f5c4ceb938dc627f0d1d434a6cea57ae5927b57cbf906e3b9",
+          "checkpoint_digest": "2b6b2b4f64f7463713a020158b61474092773b39985baed1cf9442bd425ca23f",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_flm_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "7bed33430ea92906c36083f16a864a8deca323fba3a80e1cb757e494257b52a7",
+      "bytes": 4500610,
+      "path": "samples/owt/owt_v2_flm_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_flm_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 336,
+          "selected_id": 336
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "c19b0898ccde43c66f93a14f27e42311154c1d76547ed39bce8dfef7f260e63f",
+          "checkpoint_digest": "2b6b2b4f64f7463713a020158b61474092773b39985baed1cf9442bd425ca23f",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_flm_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "dc586e84dbc97ca339fd96e51fc61f94ff14112b0b577e8479526094a9272ac4",
+      "bytes": 3830665,
+      "path": "samples/owt/owt_v2_flm_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_flm_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 100,
+          "selected_id": 100
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "64dc3666c5b23bfdeb7e719b10d7d94e2712733bf74f70aad92837179348e721",
+          "checkpoint_digest": "2b6b2b4f64f7463713a020158b61474092773b39985baed1cf9442bd425ca23f",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_flm_512_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "d76aabf70d5d42cf9b9fb3672c524ff99df18b8d7fcfbba77d07a387c9f8a97d",
+      "bytes": 4450222,
+      "path": "samples/owt/owt_v2_flm_512_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_flm_512_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 512,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 706,
+          "selected_id": 706
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "af73f9e93b57126cd062fcdc60ab9347f3bc603ca0741708d049251e17b12dfb",
+          "checkpoint_digest": "2b6b2b4f64f7463713a020158b61474092773b39985baed1cf9442bd425ca23f",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_flm_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "f9649eded07bec5a28286762cfcd1719078ae6a672b0071c3d4052d64cdee767",
+      "bytes": 3243697,
+      "path": "samples/owt/owt_v2_flm_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_flm_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 635,
+          "selected_id": 635
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "7f90e8f34a8f6ee8e34b32d8e8f43a9c4c2bc6b15f53fff7ebc0a80f302451a6",
+          "checkpoint_digest": "2b6b2b4f64f7463713a020158b61474092773b39985baed1cf9442bd425ca23f",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_fmlm_16_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "bf347650a2616531075035547c200e359b7b7b24f0580e146881d7ce7f16706c",
+      "bytes": 4634226,
+      "path": "samples/owt/owt_v2_fmlm_16_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_fmlm_16_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 16,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 477,
+          "selected_id": 477
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "11f61f7fdc218d3d686b598c43df9b35b18aaf56ad98d3c563b595c266b06bc9",
+          "checkpoint_digest": "9700bffdd474a681e3d12ea5496c970c60304b34c28114118b9372464b0e0981",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_fmlm_1_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "2f2e3cc5059e589fb7186d5c98daf5766237f784183cb2681b2021502bcd606d",
+      "bytes": 4159493,
+      "path": "samples/owt/owt_v2_fmlm_1_nfe/samples.jsonl",
+      "suites": [
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_fmlm_1_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 409,
+          "selected_id": 409
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "8acbda992450a8a665b727a231ba09b54890bccd06962639d964c667695cf084",
+          "checkpoint_digest": "9700bffdd474a681e3d12ea5496c970c60304b34c28114118b9372464b0e0981",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_fmlm_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "eae0e16c5579c0285320091c941ad8d5140dad68c04f6b678f9995bc8fe143ce",
+      "bytes": 4540250,
+      "path": "samples/owt/owt_v2_fmlm_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_fmlm_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 517,
+          "selected_id": 517
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "60b25d140f3cf35bf3232875fd4bf1799ee0e0471cd44093ee2ad3dcfacd68db",
+          "checkpoint_digest": "9700bffdd474a681e3d12ea5496c970c60304b34c28114118b9372464b0e0981",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_fmlm_4_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "17508b201f080170389f56660a3e2304c549861cee61f3a388724cf43da996a4",
+      "bytes": 4548047,
+      "path": "samples/owt/owt_v2_fmlm_4_nfe/samples.jsonl",
+      "suites": [
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_fmlm_4_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 4,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 242,
+          "selected_id": 242
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "96d074b4c4dbd72f90b9f67cd7e5f097bf9abc5548aa30cf50e6af164fabcb85",
+          "checkpoint_digest": "9700bffdd474a681e3d12ea5496c970c60304b34c28114118b9372464b0e0981",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_fmlm_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "FMLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "0caee3fa0cf6e48ebfdcf3a9472b5620a4e84b05c25e75cbec42920e40c93877",
+      "bytes": 4645479,
+      "path": "samples/owt/owt_v2_fmlm_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_fmlm_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "FMLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 678,
+          "selected_id": 678
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "8b6fae7db7cbdf59afe472e6afaa26ec94596148da9924a24f0ef4ce3911a6b6",
+          "checkpoint_digest": "9700bffdd474a681e3d12ea5496c970c60304b34c28114118b9372464b0e0981",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_mdlm_1024_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "MDLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "1b79aca4bd23115f4504c022380106ced37244bc9982761ad16b089f836f4131",
+      "bytes": 4771082,
+      "path": "samples/owt/owt_v2_mdlm_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_mdlm_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "MDLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 349,
+          "selected_id": 349
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "b2e833d1212bf616445760f71ffedc1786561baa37586572da05d4227803f1db",
+          "checkpoint_digest": "74bf9b853206e73b4811d8127e836c2cdcfb7a23f8e04ad7d1356a58f1138d27",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_mdlm_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "MDLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "81f83d95d67d5cea93b8a17aac534ae0beecd796331299c778d9de7d234279fa",
+      "bytes": 4773510,
+      "path": "samples/owt/owt_v2_mdlm_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_mdlm_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "MDLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 53,
+          "selected_id": 53
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "dca2c05a6c0673b9119ce466a38444f55001e3d82fd1a39d6f7b736ab44f1b0d",
+          "checkpoint_digest": "74bf9b853206e73b4811d8127e836c2cdcfb7a23f8e04ad7d1356a58f1138d27",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_mdlm_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "MDLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "d09221aee642b65b043d2cd92aa0b95cbd5e134943bb6104dbb8431e1c436624",
+      "bytes": 4748437,
+      "path": "samples/owt/owt_v2_mdlm_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_mdlm_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "MDLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 983,
+          "selected_id": 983
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "538b5d4c650dee6bdebe096365ec2ee693719b4c150f5bf541c148aa99a70e6d",
+          "checkpoint_digest": "74bf9b853206e73b4811d8127e836c2cdcfb7a23f8e04ad7d1356a58f1138d27",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_mdlm_512_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "MDLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "863daa4d1a584c8970e21831362b624fc4ac12cee5646e850e8a0defe85a224f",
+      "bytes": 4777515,
+      "path": "samples/owt/owt_v2_mdlm_512_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_mdlm_512_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "MDLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 512,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 97,
+          "selected_id": 97
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "5bf86246c8ec1197ea89277acbcb4aa1d63c0a87ac7885dc2d41db21e5cb7c71",
+          "checkpoint_digest": "74bf9b853206e73b4811d8127e836c2cdcfb7a23f8e04ad7d1356a58f1138d27",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_mdlm_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "MDLM",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "3e09ffa3a56ea80e406c6ec3364f4178e81d7b063b60a2da8c3afe6d36f01a47",
+      "bytes": 4575262,
+      "path": "samples/owt/owt_v2_mdlm_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_mdlm_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "MDLM",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 153,
+          "selected_id": 153
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "ca740afd11a5f2f4407b68a7523b5d804de78813f2166f8b20f15a5b48487bb4",
+          "checkpoint_digest": "74bf9b853206e73b4811d8127e836c2cdcfb7a23f8e04ad7d1356a58f1138d27",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_plaid_1024_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Plaid",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "1058c429d4fa62f716c3cf08e01976e03e907ab6cb37e2361814ab434d303ecd",
+      "bytes": 4987721,
+      "path": "samples/owt/owt_v2_plaid_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_plaid_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "plaid",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 445,
+          "selected_id": "owt-owt_v2_plaid_1024_nfe-000445"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": null,
+          "tokenizer_revision": null,
+          "source_manifest_sha256": "479512d7c1feddfd8fa30423bc8f2c57997d7b378c904bba83025ce3202aeda5",
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "owt_v2_plaid_256_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Plaid",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "07278858384ee5656b6573a772ba7e338b66fdaae8bb927cad528e2a58a73196",
+      "bytes": 5067728,
+      "path": "samples/owt/owt_v2_plaid_256_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_plaid_256_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "plaid",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 256,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 265,
+          "selected_id": "owt-owt_v2_plaid_256_nfe-000265"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": null,
+          "tokenizer_revision": null,
+          "source_manifest_sha256": "b1b3dd3ef436baec12df04a7a47268da434d8dd89583e3d8da39e27314b5f9f5",
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "owt_v2_plaid_4096_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "Plaid",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "bfcc2512c4757d9702a2bf889d77839a27502042811e7afcc50bc8a1a6f9342f",
+      "bytes": 5001002,
+      "path": "samples/owt/owt_v2_plaid_4096_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_plaid_4096_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "plaid",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 4096,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 280,
+          "selected_id": "owt-owt_v2_plaid_4096_nfe-000280"
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": null,
+          "tokenizer_revision": null,
+          "source_manifest_sha256": "eae020720d9ef0c27c432d3f6b2cb753c6430eb134d4497902502e901aee5a9e",
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "owt_v2_replaid_nosc_ddpm_1024_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "RePlaid",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "518d2d10ce436833160df99bb88e859fee5f2682a79fed3d7431625e5d4424ad",
+      "bytes": 4673130,
+      "path": "samples/owt/owt_v2_replaid_nosc_ddpm_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-main",
+        "paper-judges",
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_replaid_nosc_ddpm_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "RePlaid",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 123,
+          "selected_id": 123
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "d540af6877a889d589e8d6ccc70dda0ab1f77e2f9c88287d1512942c37af98b4",
+          "checkpoint_digest": null,
+          "seed": null
+        }
+      }
+    },
+    {
+      "id": "owt_v2_sedd_1024_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "SEDD",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "b8c55ee56ca2e01261f7adf0cd45fad85445ff2bc74e9825064670527a46ea41",
+      "bytes": 4728658,
+      "path": "samples/owt/owt_v2_sedd_1024_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_sedd_1024_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "SEDD",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 1024,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 757,
+          "selected_id": 757
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "4aa2c242b3e732932cdfe24d89c586ced740ba226b52fb5d0fcba848f36b1098",
+          "checkpoint_digest": "11ec99693f1f073b3e8df88db6d2f32705e72a7c08b33c5f2f54c8dc696693b1",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_sedd_128_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "SEDD",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "63ee598bea5bc3b0072fee3306a62a83094253d54062807aa20161c86a7a9441",
+      "bytes": 4758808,
+      "path": "samples/owt/owt_v2_sedd_128_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_sedd_128_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "SEDD",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 128,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 622,
+          "selected_id": 622
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "1f9dd938c6afcf42161ead2d56e4b1a2667e84171e048fd695a62f2247d03851",
+          "checkpoint_digest": "11ec99693f1f073b3e8df88db6d2f32705e72a7c08b33c5f2f54c8dc696693b1",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_sedd_32_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "SEDD",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "39ca9e3b248c2176992ec403c52fe03dd51e9601334917b9a050428245ba88ac",
+      "bytes": 4736432,
+      "path": "samples/owt/owt_v2_sedd_32_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_sedd_32_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "SEDD",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 32,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 876,
+          "selected_id": 876
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "b201ca8cd9903a897bad5864046d22395efdfbd737e991058b3d9e8c4dce6586",
+          "checkpoint_digest": "11ec99693f1f073b3e8df88db6d2f32705e72a7c08b33c5f2f54c8dc696693b1",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_sedd_512_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "SEDD",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "f5579fd451d41f6ebe86b0974096ff5e6fda779c439915dde99e86a72d982c8a",
+      "bytes": 4742056,
+      "path": "samples/owt/owt_v2_sedd_512_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_sedd_512_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "SEDD",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 512,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 570,
+          "selected_id": 570
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "030d04cc7ea20205ef9c6af4c12383b5a93ecd5261c0934aecfeede332aeaf29",
+          "checkpoint_digest": "11ec99693f1f073b3e8df88db6d2f32705e72a7c08b33c5f2f54c8dc696693b1",
+          "seed": 1
+        }
+      }
+    },
+    {
+      "id": "owt_v2_sedd_8_nfe",
+      "aliases": [],
+      "dataset": "owt",
+      "label": "SEDD",
+      "kind": "trained",
+      "n_samples": 1024,
+      "sha256": "0f59d5f7a5116efbaf8ecbaba818dc271c254c6b6b310b3d0b2cbb2a4a91d437",
+      "bytes": 4592450,
+      "path": "samples/owt/owt_v2_sedd_8_nfe/samples.jsonl",
+      "suites": [
+        "paper-all"
+      ],
+      "download_urls": [
+        "https://raw.githubusercontent.com/antoniofrancaib/dlmbench/main/samples/owt/owt_v2_sedd_8_nfe/samples.jsonl"
+      ],
+      "provenance": {
+        "status": "local-frozen-bank",
+        "family": "SEDD",
+        "control_type": "primary",
+        "control_name": "none",
+        "nfe": 8,
+        "gallery": {
+          "rule": "int(SHA256(ASCII(sample_sha256) || UTF8(seed))) mod row_count",
+          "seed": "dlmbench-corpus-atlas-v1",
+          "selected_index": 940,
+          "selected_id": 940
+        },
+        "limitations": [],
+        "scientific_metadata": {
+          "sequence_length": 1024,
+          "tokenizer_id": "gpt2",
+          "tokenizer_revision": "local-sha256:3fa95867ee0489f74ae555229637bd352003a3ee7aaefbb373af52144eb08e07",
+          "source_manifest_sha256": "77c83484dbe9b68283a3fb65f1a55babb813dc4792625535f5cb5c620d5bd600",
+          "checkpoint_digest": "11ec99693f1f073b3e8df88db6d2f32705e72a7c08b33c5f2f54c8dc696693b1",
+          "seed": 1
+        }
+      }
+    }
+  ],
+  "suites": {
+    "paper-main": [
+      "owt_data_train",
+      "owt_ar_base",
+      "owt_v2_replaid_nosc_ddpm_1024_nfe",
+      "owt_v2_plaid_1024_nfe",
+      "owt_mdlm_1024_nfe",
+      "owt_langflow_1024_nfe",
+      "owt_sedd_1024_nfe",
+      "owt_v2_elf_m_64_nfe",
+      "owt_duo_base_1024_nfe",
+      "owt_sdtt_mdlm_teacher_1024_nfe",
+      "owt_flm_1024_nfe",
+      "owt_fmlm_32_nfe",
+      "owt_v2_cobit_m_256_nfe",
+      "owt_mirror_5000",
+      "owt_periodic_k_400",
+      "owt_phrase_bank_5000",
+      "owt_topk_iid_k64",
+      "lm1b_data_train",
+      "lm1b_duo_1024_nfe",
+      "lm1b_mdlm_1024_nfe",
+      "lm1b_rdlm_1000_nfe",
+      "lm1b_flm_1024_nfe",
+      "lm1b_langflow_128_nfe",
+      "lm1b_langflow_1024_nfe",
+      "lm1b_fmlm_32_nfe",
+      "lm1b_fmlm_4_nfe",
+      "lm1b_fmlm_1_nfe",
+      "lm1b_mirror_5000",
+      "lm1b_phrase_bank_1000",
+      "lm1b_periodic_k_64",
+      "lm1b_topk_iid_k32"
+    ],
+    "paper-judges": [
+      "owt_data_train",
+      "owt_ar_base",
+      "owt_v2_replaid_nosc_ddpm_1024_nfe",
+      "owt_v2_plaid_1024_nfe",
+      "owt_mdlm_1024_nfe",
+      "owt_langflow_1024_nfe",
+      "owt_sedd_1024_nfe",
+      "owt_v2_elf_m_64_nfe",
+      "owt_duo_base_1024_nfe",
+      "owt_sdtt_mdlm_teacher_1024_nfe",
+      "owt_flm_1024_nfe",
+      "owt_fmlm_32_nfe",
+      "owt_v2_cobit_m_256_nfe",
+      "owt_mirror_5000",
+      "owt_periodic_k_400",
+      "owt_phrase_bank_5000",
+      "owt_topk_iid_k64",
+      "owt_v2_fmlm_1_nfe",
+      "owt_v2_fmlm_4_nfe",
+      "owt_v2_elf_l_32_nfe",
+      "owt_v2_cobit_m_512_nfe"
+    ],
+    "paper-all": [
+      "lm1b_data_train",
+      "lm1b_duo_1024_nfe",
+      "lm1b_flm_1024_nfe",
+      "lm1b_fmlm_1_nfe",
+      "lm1b_fmlm_32_nfe",
+      "lm1b_fmlm_4_nfe",
+      "lm1b_langflow_1024_nfe",
+      "lm1b_langflow_128_nfe",
+      "lm1b_mdlm_1024_nfe",
+      "lm1b_mirror_5000",
+      "lm1b_periodic_k_64",
+      "lm1b_phrase_bank_1000",
+      "lm1b_rdlm_1000_nfe",
+      "lm1b_topk_iid_k32",
+      "owt_ar_base",
+      "owt_data_train",
+      "owt_di4c_sdtt6_16_nfe",
+      "owt_di4c_sdtt7_16_nfe",
+      "owt_duo_base_1024_nfe",
+      "owt_flm_1024_nfe",
+      "owt_fmlm_1_nfe",
+      "owt_fmlm_32_nfe",
+      "owt_fmlm_4_nfe",
+      "owt_langflow_1024_nfe",
+      "owt_mdlm_1024_nfe",
+      "owt_mirror_5000",
+      "owt_periodic_k_400",
+      "owt_phrase_bank_5000",
+      "owt_sdtt_kld_r7_8_nfe",
+      "owt_sdtt_mdlm_teacher_1024_nfe",
+      "owt_sedd_1024_nfe",
+      "owt_topk_iid_k64",
+      "owt_v2_cobit_m_128_nfe",
+      "owt_v2_cobit_m_256_nfe",
+      "owt_v2_cobit_m_512_nfe",
+      "owt_v2_cobit_s_128_nfe",
+      "owt_v2_cobit_s_256_nfe",
+      "owt_v2_cobit_s_512_nfe",
+      "owt_v2_duo_base_1024_nfe",
+      "owt_v2_duo_base_128_nfe",
+      "owt_v2_duo_base_32_nfe",
+      "owt_v2_duo_base_512_nfe",
+      "owt_v2_duo_base_8_nfe",
+      "owt_v2_duo_distilled_16_nfe",
+      "owt_v2_duo_distilled_32_nfe",
+      "owt_v2_duo_distilled_8_nfe",
+      "owt_v2_elf_b_128_nfe",
+      "owt_v2_elf_b_32_nfe",
+      "owt_v2_elf_b_64_nfe",
+      "owt_v2_elf_b_8_nfe",
+      "owt_v2_elf_l_128_nfe",
+      "owt_v2_elf_l_32_nfe",
+      "owt_v2_elf_l_64_nfe",
+      "owt_v2_elf_l_8_nfe",
+      "owt_v2_elf_m_128_nfe",
+      "owt_v2_elf_m_32_nfe",
+      "owt_v2_elf_m_64_nfe",
+      "owt_v2_elf_m_8_nfe",
+      "owt_v2_flm_1024_nfe",
+      "owt_v2_flm_128_nfe",
+      "owt_v2_flm_32_nfe",
+      "owt_v2_flm_512_nfe",
+      "owt_v2_flm_8_nfe",
+      "owt_v2_fmlm_16_nfe",
+      "owt_v2_fmlm_1_nfe",
+      "owt_v2_fmlm_32_nfe",
+      "owt_v2_fmlm_4_nfe",
+      "owt_v2_fmlm_8_nfe",
+      "owt_v2_mdlm_1024_nfe",
+      "owt_v2_mdlm_128_nfe",
+      "owt_v2_mdlm_32_nfe",
+      "owt_v2_mdlm_512_nfe",
+      "owt_v2_mdlm_8_nfe",
+      "owt_v2_plaid_1024_nfe",
+      "owt_v2_plaid_256_nfe",
+      "owt_v2_plaid_4096_nfe",
+      "owt_v2_replaid_nosc_ddpm_1024_nfe",
+      "owt_v2_sedd_1024_nfe",
+      "owt_v2_sedd_128_nfe",
+      "owt_v2_sedd_32_nfe",
+      "owt_v2_sedd_512_nfe",
+      "owt_v2_sedd_8_nfe"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "corpus_atlas": {
+    "name": "dlmbench corpus atlas v1",
+    "source_file": "6e5f1e7110fd-6e5f1e7110fd-corpus_atlas_manifest.json",
+  "sha256": "6e5f1e7110fd526f51c286bbe71d7b920b6cb98f0caa73beca02fd2f8ed2d3c7",
+    "schema_version": "dlmbench-corpus-atlas-v1",
+    "selection_seed": "dlmbench-corpus-atlas-v1"
+  },
+  "catalog": {
+    "file": "banks.json",
+    "bank_identities": 82,
+    "suites": {
+      "paper-main": 31,
+      "paper-judges": 21,
+      "paper-all": 82
+    }
+  },
+  "public_downloads": false,
+  "raw_judgments_bundled": false,
+  "notes": [
+    "Two real-reference byte sources are not present as ordinary sample files and are explicitly unavailable.",
+    "Raw human and LLM judgment payloads are deliberately not bundled; exact judgment replay requires user-supplied local inputs."
+  ]
+}

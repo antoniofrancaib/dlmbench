@@ -1,0 +1,2466 @@
+{
+  "type": "vega-lite",
+  "spec": {
+    "height": {
+      "step": 22
+    },
+    "data": {
+      "values": [
+        {
+          "r": "Random BERT",
+          "c": "Random BERT",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "BERT-base",
+          "v": 0.7308,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "E5-base-v2",
+          "v": 0.5275,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "GPT-2-large",
+          "v": 0.6099,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "MPNet-base-v2",
+          "v": 0.7143,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "RoBERTa-base",
+          "v": 0.5989,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "Random BERT",
+          "v": 0.7308,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "BERT-base",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "E5-base-v2",
+          "v": 0.5714,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "GPT-2-large",
+          "v": 0.8791,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "MPNet-base-v2",
+          "v": 0.9451,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "RoBERTa-base",
+          "v": 0.8846,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "Random BERT",
+          "v": 0.5275,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "BERT-base",
+          "v": 0.5714,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "E5-base-v2",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.7802,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 0.6648,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.7857,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "Random BERT",
+          "v": 0.6099,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "BERT-base",
+          "v": 0.8791,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "E5-base-v2",
+          "v": 0.7802,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "GPT-2-large",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "MPNet-base-v2",
+          "v": 0.9176,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "RoBERTa-base",
+          "v": 0.978,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "Random BERT",
+          "v": 0.7143,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "BERT-base",
+          "v": 0.9451,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "E5-base-v2",
+          "v": 0.6648,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.9176,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.9121,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "Random BERT",
+          "v": 0.5989,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "BERT-base",
+          "v": 0.8846,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "E5-base-v2",
+          "v": 0.7857,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "GPT-2-large",
+          "v": 0.978,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "MPNet-base-v2",
+          "v": 0.9121,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "RoBERTa-base",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "Random BERT",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "BERT-base",
+          "v": 0.7363,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "E5-base-v2",
+          "v": 0.533,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "GPT-2-large",
+          "v": 0.5604,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "MPNet-base-v2",
+          "v": 0.7308,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "RoBERTa-base",
+          "v": 0.6099,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "Random BERT",
+          "v": 0.7363,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "BERT-base",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "E5-base-v2",
+          "v": 0.6484,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "GPT-2-large",
+          "v": 0.8736,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "MPNet-base-v2",
+          "v": 0.978,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "RoBERTa-base",
+          "v": 0.8846,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "Random BERT",
+          "v": 0.533,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "BERT-base",
+          "v": 0.6484,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "E5-base-v2",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.7967,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 0.6374,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8022,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "Random BERT",
+          "v": 0.5604,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "BERT-base",
+          "v": 0.8736,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "E5-base-v2",
+          "v": 0.7967,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "GPT-2-large",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "MPNet-base-v2",
+          "v": 0.8791,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "RoBERTa-base",
+          "v": 0.978,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "Random BERT",
+          "v": 0.7308,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "BERT-base",
+          "v": 0.978,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "E5-base-v2",
+          "v": 0.6374,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.8791,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8956,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "Random BERT",
+          "v": 0.6099,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "BERT-base",
+          "v": 0.8846,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "E5-base-v2",
+          "v": 0.8022,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "GPT-2-large",
+          "v": 0.978,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "MPNet-base-v2",
+          "v": 0.8956,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "RoBERTa-base",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "Random BERT",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "BERT-base",
+          "v": 0.7363,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "E5-base-v2",
+          "v": 0.533,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "GPT-2-large",
+          "v": 0.5934,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "MPNet-base-v2",
+          "v": 0.7308,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "RoBERTa-base",
+          "v": 0.6154,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "Random BERT",
+          "v": 0.7363,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "BERT-base",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "E5-base-v2",
+          "v": 0.6484,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "GPT-2-large",
+          "v": 0.8956,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "MPNet-base-v2",
+          "v": 0.978,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "RoBERTa-base",
+          "v": 0.8901,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "Random BERT",
+          "v": 0.533,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "BERT-base",
+          "v": 0.6484,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "E5-base-v2",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.7857,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 0.6374,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8077,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "Random BERT",
+          "v": 0.5934,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "BERT-base",
+          "v": 0.8956,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "E5-base-v2",
+          "v": 0.7857,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "GPT-2-large",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "MPNet-base-v2",
+          "v": 0.9066,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "RoBERTa-base",
+          "v": 0.9945,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "Random BERT",
+          "v": 0.7308,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "BERT-base",
+          "v": 0.978,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "E5-base-v2",
+          "v": 0.6374,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.9066,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.9011,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "Random BERT",
+          "v": 0.6154,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "BERT-base",
+          "v": 0.8901,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "E5-base-v2",
+          "v": 0.8077,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "GPT-2-large",
+          "v": 0.9945,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "MPNet-base-v2",
+          "v": 0.9011,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "RoBERTa-base",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "Random BERT",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "BERT-base",
+          "v": 0.4835,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "E5-base-v2",
+          "v": 0.641,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "GPT-2-large",
+          "v": 0.5138,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "MPNet-base-v2",
+          "v": 0.6355,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "RoBERTa-base",
+          "v": 0.6041,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "Random BERT",
+          "v": 0.4835,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "BERT-base",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "E5-base-v2",
+          "v": 0.5942,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "GPT-2-large",
+          "v": 0.7658,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "MPNet-base-v2",
+          "v": 0.9298,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "RoBERTa-base",
+          "v": 0.8662,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "Random BERT",
+          "v": 0.641,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "BERT-base",
+          "v": 0.5942,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "E5-base-v2",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.8776,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 0.7418,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8623,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "Random BERT",
+          "v": 0.5138,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "BERT-base",
+          "v": 0.7658,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "E5-base-v2",
+          "v": 0.8776,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "GPT-2-large",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "MPNet-base-v2",
+          "v": 0.8473,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "RoBERTa-base",
+          "v": 0.9434,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "Random BERT",
+          "v": 0.6355,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "BERT-base",
+          "v": 0.9298,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "E5-base-v2",
+          "v": 0.7418,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.8473,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.9366,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "Random BERT",
+          "v": 0.6041,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "BERT-base",
+          "v": 0.8662,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "E5-base-v2",
+          "v": 0.8623,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "GPT-2-large",
+          "v": 0.9434,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "MPNet-base-v2",
+          "v": 0.9366,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "RoBERTa-base",
+          "v": 1.0,
+          "n": 13,
+          "p0": "LM1B",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "Random BERT",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "BERT-base",
+          "v": 0.3623,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "E5-base-v2",
+          "v": 0.5984,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "GPT-2-large",
+          "v": 0.403,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "MPNet-base-v2",
+          "v": 0.491,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "RoBERTa-base",
+          "v": 0.3163,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "Random BERT",
+          "v": 0.3623,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "BERT-base",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "E5-base-v2",
+          "v": 0.8874,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "GPT-2-large",
+          "v": 0.9508,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "MPNet-base-v2",
+          "v": 0.9453,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "BERT-base",
+          "c": "RoBERTa-base",
+          "v": 0.9578,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "Random BERT",
+          "v": 0.5984,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "BERT-base",
+          "v": 0.8874,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "E5-base-v2",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.9415,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 0.9714,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8189,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "Random BERT",
+          "v": 0.403,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "BERT-base",
+          "v": 0.9508,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "E5-base-v2",
+          "v": 0.9415,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "GPT-2-large",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "MPNet-base-v2",
+          "v": 0.98,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "RoBERTa-base",
+          "v": 0.9229,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "Random BERT",
+          "v": 0.491,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "BERT-base",
+          "v": 0.9453,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "E5-base-v2",
+          "v": 0.9714,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.98,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8945,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "Random BERT",
+          "v": 0.3163,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "BERT-base",
+          "v": 0.9578,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "E5-base-v2",
+          "v": 0.8189,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "GPT-2-large",
+          "v": 0.9229,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "MPNet-base-v2",
+          "v": 0.8945,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "RoBERTa-base",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Fréchet"
+        },
+        {
+          "r": "Random BERT",
+          "c": "Random BERT",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "BERT-base",
+          "v": 0.4692,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "E5-base-v2",
+          "v": 0.8061,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "GPT-2-large",
+          "v": 0.5218,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "MPNet-base-v2",
+          "v": 0.6989,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "RoBERTa-base",
+          "v": 0.447,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "Random BERT",
+          "v": 0.4692,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "BERT-base",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "E5-base-v2",
+          "v": 0.797,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "GPT-2-large",
+          "v": 0.9336,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "MPNet-base-v2",
+          "v": 0.8985,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "BERT-base",
+          "c": "RoBERTa-base",
+          "v": 0.9621,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "Random BERT",
+          "v": 0.8061,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "BERT-base",
+          "v": 0.797,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "E5-base-v2",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.837,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 0.9525,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.7616,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "Random BERT",
+          "v": 0.5218,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "BERT-base",
+          "v": 0.9336,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "E5-base-v2",
+          "v": 0.837,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "GPT-2-large",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "MPNet-base-v2",
+          "v": 0.9284,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "RoBERTa-base",
+          "v": 0.9731,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "Random BERT",
+          "v": 0.6989,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "BERT-base",
+          "v": 0.8985,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "E5-base-v2",
+          "v": 0.9525,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.9284,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8792,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "Random BERT",
+          "v": 0.447,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "BERT-base",
+          "v": 0.9621,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "E5-base-v2",
+          "v": 0.7616,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "GPT-2-large",
+          "v": 0.9731,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "MPNet-base-v2",
+          "v": 0.8792,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "RoBERTa-base",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "Energy"
+        },
+        {
+          "r": "Random BERT",
+          "c": "Random BERT",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "BERT-base",
+          "v": 0.5679,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "E5-base-v2",
+          "v": 0.8054,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "GPT-2-large",
+          "v": 0.5867,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "MPNet-base-v2",
+          "v": 0.7384,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "RoBERTa-base",
+          "v": 0.4991,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "Random BERT",
+          "v": 0.5679,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "BERT-base",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "E5-base-v2",
+          "v": 0.874,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "GPT-2-large",
+          "v": 0.9499,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "MPNet-base-v2",
+          "v": 0.9149,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "BERT-base",
+          "c": "RoBERTa-base",
+          "v": 0.9733,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "Random BERT",
+          "v": 0.8054,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "BERT-base",
+          "v": 0.874,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "E5-base-v2",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.897,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 0.9747,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8278,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "Random BERT",
+          "v": 0.5867,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "BERT-base",
+          "v": 0.9499,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "E5-base-v2",
+          "v": 0.897,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "GPT-2-large",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "MPNet-base-v2",
+          "v": 0.9351,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "RoBERTa-base",
+          "v": 0.9683,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "Random BERT",
+          "v": 0.7384,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "BERT-base",
+          "v": 0.9149,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "E5-base-v2",
+          "v": 0.9747,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.9351,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.8782,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "Random BERT",
+          "v": 0.4991,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "BERT-base",
+          "v": 0.9733,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "E5-base-v2",
+          "v": 0.8278,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "GPT-2-large",
+          "v": 0.9683,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "MPNet-base-v2",
+          "v": 0.8782,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "RoBERTa-base",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MMD²"
+        },
+        {
+          "r": "Random BERT",
+          "c": "Random BERT",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "BERT-base",
+          "v": 0.4812,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "E5-base-v2",
+          "v": 0.8067,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "GPT-2-large",
+          "v": 0.567,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "MPNet-base-v2",
+          "v": 0.7673,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "Random BERT",
+          "c": "RoBERTa-base",
+          "v": 0.3634,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "Random BERT",
+          "v": 0.4812,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "BERT-base",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "E5-base-v2",
+          "v": 0.7433,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "GPT-2-large",
+          "v": 0.9635,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "MPNet-base-v2",
+          "v": 0.8354,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "BERT-base",
+          "c": "RoBERTa-base",
+          "v": 0.9483,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "Random BERT",
+          "v": 0.8067,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "BERT-base",
+          "v": 0.7433,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "E5-base-v2",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.798,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 0.9603,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "E5-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.5936,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "Random BERT",
+          "v": 0.567,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "BERT-base",
+          "v": 0.9635,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "E5-base-v2",
+          "v": 0.798,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "GPT-2-large",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "MPNet-base-v2",
+          "v": 0.8698,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "GPT-2-large",
+          "c": "RoBERTa-base",
+          "v": 0.9206,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "Random BERT",
+          "v": 0.7673,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "BERT-base",
+          "v": 0.8354,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "E5-base-v2",
+          "v": 0.9603,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "GPT-2-large",
+          "v": 0.8698,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "MPNet-base-v2",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "MPNet-base-v2",
+          "c": "RoBERTa-base",
+          "v": 0.7053,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "Random BERT",
+          "v": 0.3634,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "BERT-base",
+          "v": 0.9483,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "E5-base-v2",
+          "v": 0.5936,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "GPT-2-large",
+          "v": 0.9206,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "MPNet-base-v2",
+          "v": 0.7053,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        },
+        {
+          "r": "RoBERTa-base",
+          "c": "RoBERTa-base",
+          "v": 1.0,
+          "n": 60,
+          "p0": "OpenWebText",
+          "p1": "MAUVE"
+        }
+      ]
+    },
+    "encoding": {
+      "x": {
+        "field": "c",
+        "type": "nominal",
+        "sort": [
+          "Random BERT",
+          "BERT-base",
+          "E5-base-v2",
+          "GPT-2-large",
+          "MPNet-base-v2",
+          "RoBERTa-base"
+        ],
+        "title": null,
+        "axis": {
+          "orient": "top",
+          "labelAngle": -30,
+          "labelLimit": 180,
+          "domain": false,
+          "ticks": false
+        }
+      },
+      "y": {
+        "field": "r",
+        "type": "nominal",
+        "sort": [
+          "Random BERT",
+          "BERT-base",
+          "E5-base-v2",
+          "GPT-2-large",
+          "MPNet-base-v2",
+          "RoBERTa-base"
+        ],
+        "title": null,
+        "axis": {
+          "labelLimit": 200,
+          "domain": false,
+          "ticks": false
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "rect",
+          "stroke": "var(--background-primary)",
+          "strokeWidth": 1.5,
+          "cornerRadius": 2
+        },
+        "encoding": {
+          "color": {
+            "field": "v",
+            "type": "quantitative",
+            "scale": {
+              "scheme": "redblue",
+              "domain": [
+                -1,
+                1
+              ],
+              "domainMid": 0
+            },
+            "title": [
+              "Spearman ρ",
+              "-1 disagreement · 1 agreement"
+            ],
+            "legend": {
+              "orient": "bottom",
+              "gradientLength": 220,
+              "direction": "horizontal",
+              "titleLimit": 420
+            }
+          },
+          "tooltip": [
+            {
+              "field": "r",
+              "title": "Encoder"
+            },
+            {
+              "field": "c",
+              "title": "column"
+            },
+            {
+              "field": "v",
+              "format": ".2f",
+              "title": "Spearman ρ"
+            },
+            {
+              "field": "n",
+              "title": "n"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "fontSize": 10.5
+        },
+        "encoding": {
+          "text": {
+            "field": "v",
+            "type": "quantitative",
+            "format": ".2f"
+          },
+          "color": {
+            "condition": {
+              "test": "abs(datum.v) > 0.6",
+              "value": "white"
+            },
+            "value": "#333"
+          }
+        }
+      }
+    ],
+    "params": [
+      {
+        "name": "p0sel",
+        "value": "LM1B",
+        "bind": {
+          "input": "radio",
+          "options": [
+            "LM1B",
+            "OpenWebText"
+          ],
+          "name": "Cohort "
+        }
+      },
+      {
+        "name": "p1sel",
+        "value": "Fréchet",
+        "bind": {
+          "input": "radio",
+          "options": [
+            "Fréchet",
+            "Energy",
+            "MMD²",
+            "MAUVE"
+          ],
+          "name": "Metric "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "datum.p0 === p0sel && datum.p1 === p1sel"
+      }
+    ]
+  },
+  "source": {
+    "source_file": "pairwise-encoder-agreement.json",
+    "source_sha256": "af0065a0c06c78ea44b98f3b1dccde3a02416152dc857b90261a4bd177014424"
+  }
+}

@@ -1,0 +1,1588 @@
+{
+  "type": "table",
+  "columns": [
+    {
+      "label": "Spearman ρ",
+      "digits": 3
+    },
+    {
+      "label": "Kendall τ_b",
+      "digits": 3
+    },
+    {
+      "label": "Reversals"
+    },
+    {
+      "label": "Reversal rate"
+    },
+    {
+      "label": "Top-k Jaccard"
+    }
+  ],
+  "rows": [
+    {
+      "label": "BERT-base ↔ E5-base-v2",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.571,
+        0.359,
+        "25/78",
+        "32.1%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ E5-base-v2",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.527,
+        0.436,
+        "22/78",
+        "28.2%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ GPT-2-large",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.61,
+        0.436,
+        "22/78",
+        "28.2%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ RoBERTa-base",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.599,
+        0.487,
+        "20/78",
+        "25.6%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.665,
+        0.538,
+        "18/78",
+        "23.1%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.714,
+        0.59,
+        "16/78",
+        "20.5%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ BERT-base",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.731,
+        0.615,
+        "15/78",
+        "19.2%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ GPT-2-large",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.78,
+        0.641,
+        "14/78",
+        "17.9%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.786,
+        0.641,
+        "14/78",
+        "17.9%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ GPT-2-large",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.879,
+        0.718,
+        "11/78",
+        "14.1%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ RoBERTa-base",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.885,
+        0.718,
+        "11/78",
+        "14.1%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.918,
+        0.795,
+        "8/78",
+        "10.3%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "MPNet-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.912,
+        0.795,
+        "8/78",
+        "10.3%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.945,
+        0.821,
+        "7/78",
+        "9.0%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ RoBERTa-base",
+      "views": [
+        "lm1b-frechet"
+      ],
+      "values": [
+        0.978,
+        0.897,
+        "4/78",
+        "5.1%",
+        "1.000 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.637,
+        0.436,
+        "22/78",
+        "28.2%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ E5-base-v2",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.533,
+        0.462,
+        "21/78",
+        "26.9%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ E5-base-v2",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.648,
+        0.462,
+        "21/78",
+        "26.9%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ GPT-2-large",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.56,
+        0.487,
+        "20/78",
+        "25.6%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ RoBERTa-base",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.61,
+        0.513,
+        "19/78",
+        "24.4%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.802,
+        0.59,
+        "16/78",
+        "20.5%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.731,
+        0.615,
+        "15/78",
+        "19.2%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ GPT-2-large",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.797,
+        0.615,
+        "15/78",
+        "19.2%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ BERT-base",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.736,
+        0.641,
+        "14/78",
+        "17.9%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ RoBERTa-base",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.885,
+        0.718,
+        "11/78",
+        "14.1%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ GPT-2-large",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.874,
+        0.744,
+        "10/78",
+        "12.8%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "MPNet-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.896,
+        0.744,
+        "10/78",
+        "12.8%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.879,
+        0.769,
+        "9/78",
+        "11.5%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.978,
+        0.923,
+        "3/78",
+        "3.8%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ RoBERTa-base",
+      "views": [
+        "lm1b-energy"
+      ],
+      "values": [
+        0.978,
+        0.923,
+        "3/78",
+        "3.8%",
+        "1.000 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.637,
+        0.436,
+        "22/78",
+        "28.2%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ E5-base-v2",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.533,
+        0.462,
+        "21/78",
+        "26.9%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ E5-base-v2",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.648,
+        0.462,
+        "21/78",
+        "26.9%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ GPT-2-large",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.593,
+        0.513,
+        "19/78",
+        "24.4%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.615,
+        0.538,
+        "18/78",
+        "23.1%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ GPT-2-large",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.786,
+        0.59,
+        "16/78",
+        "20.5%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.731,
+        0.615,
+        "15/78",
+        "19.2%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.808,
+        0.615,
+        "15/78",
+        "19.2%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ BERT-base",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.736,
+        0.641,
+        "14/78",
+        "17.9%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.89,
+        0.744,
+        "10/78",
+        "12.8%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ GPT-2-large",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.896,
+        0.769,
+        "9/78",
+        "11.5%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "MPNet-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.901,
+        0.769,
+        "9/78",
+        "11.5%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.907,
+        0.795,
+        "8/78",
+        "10.3%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.978,
+        0.923,
+        "3/78",
+        "3.8%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mmd_squared"
+      ],
+      "values": [
+        0.995,
+        0.974,
+        "1/78",
+        "1.3%",
+        "1.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ GPT-2-large",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.514,
+        0.364,
+        "24/78",
+        "30.8%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ BERT-base",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.483,
+        0.442,
+        "21/78",
+        "26.9%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ E5-base-v2",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.594,
+        0.452,
+        "21/78",
+        "26.9%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ E5-base-v2",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.641,
+        0.477,
+        "20/78",
+        "25.6%",
+        "0.000 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.604,
+        0.497,
+        "19/78",
+        "24.4%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ GPT-2-large",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.766,
+        0.571,
+        "16/78",
+        "20.5%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.635,
+        0.606,
+        "15/78",
+        "19.2%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.742,
+        0.615,
+        "15/78",
+        "19.2%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.847,
+        0.684,
+        "12/78",
+        "15.4%",
+        "0.200 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.866,
+        0.693,
+        "11/78",
+        "14.1%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ GPT-2-large",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.878,
+        0.71,
+        "11/78",
+        "14.1%",
+        "1.000 (k=3)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.862,
+        0.753,
+        "9/78",
+        "11.5%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ MPNet-base-v2",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.93,
+        0.787,
+        "8/78",
+        "10.3%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "MPNet-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.937,
+        0.805,
+        "7/78",
+        "9.0%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ RoBERTa-base",
+      "views": [
+        "lm1b-mauve"
+      ],
+      "values": [
+        0.943,
+        0.85,
+        "5/78",
+        "6.4%",
+        "0.500 (k=3)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ RoBERTa-base",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.316,
+        0.24,
+        "673/1770",
+        "38.0%",
+        "0.043 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ BERT-base",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.362,
+        0.261,
+        "654/1770",
+        "36.9%",
+        "0.263 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ GPT-2-large",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.403,
+        0.306,
+        "614/1770",
+        "34.7%",
+        "0.263 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ MPNet-base-v2",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.491,
+        0.376,
+        "552/1770",
+        "31.2%",
+        "0.412 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ E5-base-v2",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.598,
+        0.44,
+        "496/1770",
+        "28.0%",
+        "0.412 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.819,
+        0.649,
+        "311/1770",
+        "17.6%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ E5-base-v2",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.887,
+        0.72,
+        "248/1770",
+        "14.0%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "MPNet-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.895,
+        0.746,
+        "225/1770",
+        "12.7%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ RoBERTa-base",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.923,
+        0.789,
+        "187/1770",
+        "10.6%",
+        "0.500 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ GPT-2-large",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.941,
+        0.797,
+        "180/1770",
+        "10.2%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ MPNet-base-v2",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.945,
+        0.815,
+        "164/1770",
+        "9.3%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ GPT-2-large",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.951,
+        0.824,
+        "156/1770",
+        "8.8%",
+        "0.846 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ RoBERTa-base",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.958,
+        0.834,
+        "147/1770",
+        "8.3%",
+        "0.500 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ MPNet-base-v2",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.971,
+        0.855,
+        "128/1770",
+        "7.2%",
+        "1.000 (k=12)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ MPNet-base-v2",
+      "views": [
+        "owt-frechet"
+      ],
+      "values": [
+        0.98,
+        0.892,
+        "96/1770",
+        "5.4%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ RoBERTa-base",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.447,
+        0.346,
+        "579/1770",
+        "32.7%",
+        "0.043 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ BERT-base",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.469,
+        0.353,
+        "573/1770",
+        "32.4%",
+        "0.091 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ GPT-2-large",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.522,
+        0.394,
+        "536/1770",
+        "30.3%",
+        "0.043 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ MPNet-base-v2",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.699,
+        0.523,
+        "422/1770",
+        "23.8%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.762,
+        0.592,
+        "361/1770",
+        "20.4%",
+        "0.200 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ E5-base-v2",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.797,
+        0.619,
+        "337/1770",
+        "19.0%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ E5-base-v2",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.806,
+        0.625,
+        "332/1770",
+        "18.8%",
+        "0.412 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ GPT-2-large",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.837,
+        0.679,
+        "284/1770",
+        "16.0%",
+        "0.263 (k=12)"
+      ]
+    },
+    {
+      "label": "MPNet-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.879,
+        0.728,
+        "241/1770",
+        "13.6%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ MPNet-base-v2",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.898,
+        0.746,
+        "225/1770",
+        "12.7%",
+        "0.500 (k=12)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ MPNet-base-v2",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.928,
+        0.794,
+        "182/1770",
+        "10.3%",
+        "0.412 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ GPT-2-large",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.934,
+        0.811,
+        "167/1770",
+        "9.4%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ MPNet-base-v2",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.952,
+        0.831,
+        "150/1770",
+        "8.5%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ RoBERTa-base",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.962,
+        0.86,
+        "124/1770",
+        "7.0%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ RoBERTa-base",
+      "views": [
+        "owt-energy"
+      ],
+      "values": [
+        0.973,
+        0.89,
+        "97/1770",
+        "5.5%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ RoBERTa-base",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.499,
+        0.371,
+        "557/1770",
+        "31.5%",
+        "0.043 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ BERT-base",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.568,
+        0.417,
+        "516/1770",
+        "29.2%",
+        "0.091 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ GPT-2-large",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.587,
+        0.441,
+        "495/1770",
+        "28.0%",
+        "0.043 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ MPNet-base-v2",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.738,
+        0.55,
+        "398/1770",
+        "22.5%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ E5-base-v2",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.805,
+        0.612,
+        "343/1770",
+        "19.4%",
+        "0.412 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.828,
+        0.668,
+        "294/1770",
+        "16.6%",
+        "0.200 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ E5-base-v2",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.874,
+        0.705,
+        "261/1770",
+        "14.7%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "MPNet-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.878,
+        0.721,
+        "247/1770",
+        "14.0%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ GPT-2-large",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.897,
+        0.756,
+        "216/1770",
+        "12.2%",
+        "0.263 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ MPNet-base-v2",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.915,
+        0.763,
+        "210/1770",
+        "11.9%",
+        "0.500 (k=12)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ MPNet-base-v2",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.935,
+        0.807,
+        "171/1770",
+        "9.7%",
+        "0.412 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ GPT-2-large",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.95,
+        0.836,
+        "145/1770",
+        "8.2%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ MPNet-base-v2",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.975,
+        0.877,
+        "109/1770",
+        "6.2%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ RoBERTa-base",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.968,
+        0.878,
+        "108/1770",
+        "6.1%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ RoBERTa-base",
+      "views": [
+        "owt-mmd_squared"
+      ],
+      "values": [
+        0.973,
+        0.886,
+        "101/1770",
+        "5.7%",
+        "0.714 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ RoBERTa-base",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.363,
+        0.253,
+        "656/1770",
+        "37.1%",
+        "0.043 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ BERT-base",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.481,
+        0.345,
+        "578/1770",
+        "32.7%",
+        "0.091 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ GPT-2-large",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.567,
+        0.412,
+        "520/1770",
+        "29.4%",
+        "0.091 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.594,
+        0.439,
+        "492/1770",
+        "27.8%",
+        "0.263 (k=12)"
+      ]
+    },
+    {
+      "label": "MPNet-base-v2 ↔ RoBERTa-base",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.705,
+        0.536,
+        "406/1770",
+        "22.9%",
+        "0.263 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ E5-base-v2",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.743,
+        0.564,
+        "385/1770",
+        "21.8%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ MPNet-base-v2",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.767,
+        0.586,
+        "366/1770",
+        "20.7%",
+        "0.500 (k=12)"
+      ]
+    },
+    {
+      "label": "Random BERT ↔ E5-base-v2",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.807,
+        0.625,
+        "332/1770",
+        "18.8%",
+        "0.500 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ GPT-2-large",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.798,
+        0.627,
+        "330/1770",
+        "18.6%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ MPNet-base-v2",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.835,
+        0.662,
+        "298/1770",
+        "16.8%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ MPNet-base-v2",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.87,
+        0.7,
+        "265/1770",
+        "15.0%",
+        "0.333 (k=12)"
+      ]
+    },
+    {
+      "label": "GPT-2-large ↔ RoBERTa-base",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.921,
+        0.778,
+        "193/1770",
+        "10.9%",
+        "0.846 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ RoBERTa-base",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.948,
+        0.824,
+        "152/1770",
+        "8.6%",
+        "0.846 (k=12)"
+      ]
+    },
+    {
+      "label": "E5-base-v2 ↔ MPNet-base-v2",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.96,
+        0.83,
+        "150/1770",
+        "8.5%",
+        "1.000 (k=12)"
+      ]
+    },
+    {
+      "label": "BERT-base ↔ GPT-2-large",
+      "views": [
+        "owt-mauve"
+      ],
+      "values": [
+        0.964,
+        0.847,
+        "135/1770",
+        "7.6%",
+        "0.846 (k=12)"
+      ]
+    }
+  ],
+  "source": {
+    "source_file": "encoder-pair-leaderboard-disagreement.json",
+    "source_sha256": "b070414d9255672fb744395cc62647614640b47f79f72a0e393780e516d079c9"
+  }
+}

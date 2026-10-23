@@ -1,0 +1,902 @@
+{
+  "type": "table",
+  "columns": [
+    {
+      "label": "H_seq (nats)",
+      "better": "higher",
+      "digits": 3
+    },
+    {
+      "label": "H_pos (nats/tok)",
+      "better": "higher",
+      "digits": 3
+    },
+    {
+      "label": "H_pool (nats)",
+      "better": "higher",
+      "digits": 3
+    }
+  ],
+  "rows": [
+    {
+      "label": "OpenWebText (L=1024)",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "section": true
+    },
+    {
+      "label": "OWT train data",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.477,
+        5.851,
+        7.519
+      ]
+    },
+    {
+      "label": "AR",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.581,
+        5.815,
+        7.541
+      ]
+    },
+    {
+      "label": "MDLM 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.905,
+        5.957,
+        7.808
+      ]
+    },
+    {
+      "label": "MDLM 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.745,
+        5.845,
+        7.617
+      ]
+    },
+    {
+      "label": "MDLM 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.676,
+        5.819,
+        7.57
+      ]
+    },
+    {
+      "label": "MDLM 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.644,
+        5.821,
+        7.574
+      ]
+    },
+    {
+      "label": "MDLM 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.64,
+        5.826,
+        7.584
+      ]
+    },
+    {
+      "label": "SDTT Student 8-step",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.405,
+        5.489,
+        6.794
+      ]
+    },
+    {
+      "label": "SDTT Teacher 1024",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.314,
+        5.553,
+        6.805
+      ]
+    },
+    {
+      "label": "DI4C SDTT6 16-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.442,
+        5.595,
+        6.971
+      ]
+    },
+    {
+      "label": "DI4C SDTT7 16-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.327,
+        5.504,
+        6.753
+      ]
+    },
+    {
+      "label": "SEDD 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.871,
+        5.924,
+        7.732
+      ]
+    },
+    {
+      "label": "SEDD 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.727,
+        5.826,
+        7.57
+      ]
+    },
+    {
+      "label": "SEDD 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.658,
+        5.798,
+        7.512
+      ]
+    },
+    {
+      "label": "SEDD 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.624,
+        5.798,
+        7.522
+      ]
+    },
+    {
+      "label": "SEDD 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.622,
+        5.81,
+        7.558
+      ]
+    },
+    {
+      "label": "FLM 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.351,
+        6.201,
+        7.198
+      ]
+    },
+    {
+      "label": "FLM 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.73,
+        6.035,
+        7.269
+      ]
+    },
+    {
+      "label": "FLM 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.588,
+        5.746,
+        6.984
+      ]
+    },
+    {
+      "label": "FLM 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.409,
+        5.542,
+        6.661
+      ]
+    },
+    {
+      "label": "FLM 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.34,
+        5.471,
+        6.547
+      ]
+    },
+    {
+      "label": "FMLM 1-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.191,
+        5.225,
+        5.962
+      ]
+    },
+    {
+      "label": "FMLM 4-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.361,
+        5.424,
+        6.481
+      ]
+    },
+    {
+      "label": "FMLM 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.356,
+        5.429,
+        6.527
+      ]
+    },
+    {
+      "label": "FMLM 16-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.295,
+        5.373,
+        6.41
+      ]
+    },
+    {
+      "label": "FMLM 32-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.178,
+        5.259,
+        6.156
+      ]
+    },
+    {
+      "label": "LangFlow 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.253,
+        5.761,
+        7.359
+      ]
+    },
+    {
+      "label": "Duo 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.503,
+        5.575,
+        6.971
+      ]
+    },
+    {
+      "label": "Duo 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.474,
+        5.618,
+        7.047
+      ]
+    },
+    {
+      "label": "Duo 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.455,
+        5.655,
+        7.121
+      ]
+    },
+    {
+      "label": "Duo 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.435,
+        5.675,
+        7.165
+      ]
+    },
+    {
+      "label": "Duo 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.426,
+        5.682,
+        7.176
+      ]
+    },
+    {
+      "label": "Duo Distilled 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.436,
+        5.525,
+        6.86
+      ]
+    },
+    {
+      "label": "Duo Distilled 16-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.439,
+        5.577,
+        6.975
+      ]
+    },
+    {
+      "label": "Duo Distilled 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.422,
+        5.621,
+        7.067
+      ]
+    },
+    {
+      "label": "RePlaid 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.52,
+        5.789,
+        7.504
+      ]
+    },
+    {
+      "label": "Plaid 256-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.382,
+        5.896,
+        7.566
+      ]
+    },
+    {
+      "label": "Plaid 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.322,
+        5.94,
+        7.589
+      ]
+    },
+    {
+      "label": "Plaid 4096-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.282,
+        5.901,
+        7.518
+      ]
+    },
+    {
+      "label": "ELF-L 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.566,
+        5.816,
+        7.276
+      ]
+    },
+    {
+      "label": "ELF-L 32-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.347,
+        5.758,
+        7.121
+      ]
+    },
+    {
+      "label": "ELF-L 64-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.291,
+        5.773,
+        7.16
+      ]
+    },
+    {
+      "label": "ELF-L 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.186,
+        5.779,
+        7.138
+      ]
+    },
+    {
+      "label": "ELF-M 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.492,
+        5.902,
+        7.215
+      ]
+    },
+    {
+      "label": "ELF-M 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.243,
+        5.698,
+        6.995
+      ]
+    },
+    {
+      "label": "ELF-M 64-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.2,
+        5.739,
+        7.087
+      ]
+    },
+    {
+      "label": "ELF-M 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.092,
+        5.755,
+        7.08
+      ]
+    },
+    {
+      "label": "ELF-B 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.439,
+        5.805,
+        7.147
+      ]
+    },
+    {
+      "label": "ELF-B 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.159,
+        5.708,
+        6.927
+      ]
+    },
+    {
+      "label": "ELF-B 64-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.091,
+        5.752,
+        7.011
+      ]
+    },
+    {
+      "label": "ELF-B 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        4.95,
+        5.784,
+        7.016
+      ]
+    },
+    {
+      "label": "CoBit-S 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.155,
+        5.983,
+        7.676
+      ]
+    },
+    {
+      "label": "CoBit-S 256-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.252,
+        5.855,
+        7.289
+      ]
+    },
+    {
+      "label": "CoBit-S 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.019,
+        6.002,
+        7.631
+      ]
+    },
+    {
+      "label": "CoBit-M 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        5.3,
+        6.002,
+        7.676
+      ]
+    },
+    {
+      "label": "CoBit-M 256-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.386,
+        5.819,
+        7.058
+      ]
+    },
+    {
+      "label": "CoBit-M 512-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.305,
+        5.74,
+        6.802
+      ]
+    },
+    {
+      "label": "— Naive samplers (zero-parameter attacks) —",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "section": true
+    },
+    {
+      "label": "Mirror K=5000",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.204,
+        5.576,
+        6.59
+      ]
+    },
+    {
+      "label": "Periodic-k 400",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        5.93,
+        0.0,
+        5.93
+      ]
+    },
+    {
+      "label": "Phrase bank m=5000",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        4.898,
+        4.935,
+        5.492
+      ]
+    },
+    {
+      "label": "Top-k IID k=64",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        3.78,
+        3.798,
+        3.847
+      ]
+    },
+    {
+      "label": "LM1B (L=128)",
+      "views": [
+        "lm1b"
+      ],
+      "section": true
+    },
+    {
+      "label": "LM1B train data",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.328,
+        5.35,
+        6.719
+      ]
+    },
+    {
+      "label": "MDLM 1024-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.29,
+        5.358,
+        6.706
+      ]
+    },
+    {
+      "label": "Duo 1024-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.277,
+        5.336,
+        6.642
+      ]
+    },
+    {
+      "label": "FLM 1024-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.276,
+        5.274,
+        6.385
+      ]
+    },
+    {
+      "label": "FMLM 1-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.126,
+        4.846,
+        5.487
+      ]
+    },
+    {
+      "label": "FMLM 4-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.174,
+        4.953,
+        5.696
+      ]
+    },
+    {
+      "label": "FMLM 32-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.187,
+        5.008,
+        5.805
+      ]
+    },
+    {
+      "label": "LangFlow 128-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.385,
+        5.777,
+        7.062
+      ]
+    },
+    {
+      "label": "LangFlow 1024-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.372,
+        5.768,
+        7.033
+      ]
+    },
+    {
+      "label": "RDLM 1000-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.334,
+        5.452,
+        6.872
+      ]
+    },
+    {
+      "label": "— Naive samplers (zero-parameter attacks) —",
+      "views": [
+        "lm1b"
+      ],
+      "section": true
+    },
+    {
+      "label": "Mirror K=5000",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        3.836,
+        5.563,
+        6.546
+      ]
+    },
+    {
+      "label": "Periodic-k 64",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.159,
+        0.0,
+        4.159
+      ]
+    },
+    {
+      "label": "Phrase bank m=1000",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        4.042,
+        4.637,
+        5.212
+      ]
+    },
+    {
+      "label": "Top-k IID k=32",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        2.99,
+        3.144,
+        3.152
+      ]
+    }
+  ],
+  "source": {
+    "source_file": "entropy-census.json",
+    "source_sha256": "3a1cc1b356c4875e7cd19dfa48bccc1ea8a0d4b16d2f002fbc0c3513f144c7f8"
+  }
+}

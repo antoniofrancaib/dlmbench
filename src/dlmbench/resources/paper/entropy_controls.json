@@ -1,0 +1,99 @@
+{
+  "type": "table",
+  "columns": [
+    {
+      "label": "H_seq (nats)",
+      "digits": 3
+    },
+    {
+      "label": "H_pos (nats/tok)",
+      "digits": 3
+    },
+    {
+      "label": "H_pool (nats)",
+      "digits": 3
+    },
+    {
+      "label": "H_joint (exact)",
+      "digits": 3
+    }
+  ],
+  "rows": [
+    {
+      "label": "Mirror (mirror_5000)",
+      "values": [
+        3.836,
+        5.563,
+        6.546,
+        3.265
+      ]
+    },
+    {
+      "label": "Periodic (periodic_k_64)",
+      "values": [
+        4.159,
+        0.0,
+        4.159,
+        0.0
+      ]
+    },
+    {
+      "label": "Phrase bank (phrase_bank_1000)",
+      "values": [
+        4.042,
+        4.637,
+        5.212,
+        1.399
+      ]
+    },
+    {
+      "label": "Top-k iid (topk_iid_k32)",
+      "values": [
+        2.99,
+        3.144,
+        3.152,
+        3.107
+      ]
+    },
+    {
+      "label": "Mirror (mirror_5000)",
+      "values": [
+        5.204,
+        5.576,
+        6.59,
+        3.225
+      ]
+    },
+    {
+      "label": "Periodic (periodic_k_400)",
+      "values": [
+        5.93,
+        0.0,
+        5.93,
+        0.0
+      ]
+    },
+    {
+      "label": "Phrase bank (phrase_bank_5000)",
+      "values": [
+        4.898,
+        4.935,
+        5.492,
+        1.704
+      ]
+    },
+    {
+      "label": "Top-k iid (topk_iid_k64)",
+      "values": [
+        3.78,
+        3.798,
+        3.847,
+        3.587
+      ]
+    }
+  ],
+  "source": {
+    "source_file": "eight-exact-entropy-controls.json",
+    "source_sha256": "14ee76c2b80b9cf292303987643678912f9612db1214b4292fc4ee9bf752ae29"
+  }
+}

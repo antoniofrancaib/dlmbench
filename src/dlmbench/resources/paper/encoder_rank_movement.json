@@ -1,0 +1,1047 @@
+{
+  "type": "table",
+  "columns": [
+    {
+      "label": "Fréchet"
+    },
+    {
+      "label": "Energy"
+    },
+    {
+      "label": "MMD²"
+    },
+    {
+      "label": "MAUVE"
+    }
+  ],
+  "rows": [
+    {
+      "label": "OpenWebText (L=1024)",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "section": true
+    },
+    {
+      "label": "OWT train data",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "label": "AR",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "1 [1–12], Δ11",
+        "2 [1–6], Δ5",
+        "4 [1–7], Δ6",
+        "58 [56–60], Δ4"
+      ],
+      "description": "unique payload 7a533df5bd76"
+    },
+    {
+      "label": "MDLM 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "53.5 [21–56], Δ35",
+        "55 [28–55], Δ27",
+        "55 [35–55], Δ20",
+        "6 [1–33], Δ32"
+      ],
+      "description": "unique payload 3e09ffa3a56e"
+    },
+    {
+      "label": "MDLM 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "33 [8–41], Δ33",
+        "38 [14–47], Δ33",
+        "38 [20–46], Δ26",
+        "26.5 [16–53], Δ37"
+      ],
+      "description": "unique payload d09221aee642"
+    },
+    {
+      "label": "MDLM 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "14 [5–24], Δ19",
+        "22.5 [10–30], Δ20",
+        "23 [11–32], Δ21",
+        "43.5 [26–54], Δ28"
+      ],
+      "description": "unique payload 81f83d95d67d"
+    },
+    {
+      "label": "MDLM 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "8.5 [4–19], Δ15",
+        "16.5 [4–23], Δ19",
+        "16 [7–23], Δ16",
+        "50.5 [35–59], Δ24"
+      ],
+      "description": "unique payload 863daa4d1a58"
+    },
+    {
+      "label": "MDLM 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "7 [3–18], Δ15",
+        "13 [3–22], Δ19",
+        "13.5 [6–21], Δ15",
+        "48 [41–58], Δ17"
+      ],
+      "description": "unique payload 1b79aca4bd23"
+    },
+    {
+      "label": "SDTT Student 8-step",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "45 [31–49], Δ18",
+        "46.5 [44–49], Δ5",
+        "47 [46–50], Δ4",
+        "14 [10–20], Δ10"
+      ],
+      "description": "unique payload 087139d14a5d"
+    },
+    {
+      "label": "SDTT Teacher 1024",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "17.5 [13–25], Δ12",
+        "20 [5–25], Δ20",
+        "20.5 [8–24], Δ16",
+        "39 [31–48], Δ17"
+      ],
+      "description": "unique payload f4557c25d6e9"
+    },
+    {
+      "label": "DI4C SDTT6 16-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "23 [20–32], Δ12",
+        "27 [19–34], Δ15",
+        "28 [24–33], Δ9",
+        "32 [22–40], Δ18"
+      ],
+      "description": "unique payload 1c83ed74f40d"
+    },
+    {
+      "label": "DI4C SDTT7 16-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "31.5 [21–38], Δ17",
+        "31 [18–42], Δ24",
+        "31 [19–42], Δ23",
+        "28.5 [14–37], Δ23"
+      ],
+      "description": "unique payload 9dde3de08a5b"
+    },
+    {
+      "label": "SEDD 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "52 [17–54], Δ37",
+        "54 [26–54], Δ28",
+        "54 [30–54], Δ24",
+        "7 [6–38], Δ32"
+      ],
+      "description": "unique payload 0f59d5f7a511"
+    },
+    {
+      "label": "SEDD 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "28.5 [7–39], Δ32",
+        "36.5 [13–45], Δ32",
+        "36 [18–44], Δ26",
+        "28.5 [19–55], Δ36"
+      ],
+      "description": "unique payload 39ca9e3b248c"
+    },
+    {
+      "label": "SEDD 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "13 [6–22], Δ16",
+        "20 [9–28], Δ19",
+        "22 [10–31], Δ21",
+        "42.5 [25–58], Δ33"
+      ],
+      "description": "unique payload 63ee598bea5b"
+    },
+    {
+      "label": "SEDD 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "9 [2–17], Δ15",
+        "16 [6–24], Δ18",
+        "16 [8–24], Δ16",
+        "47.5 [33–57], Δ24"
+      ],
+      "description": "unique payload f5579fd451d4"
+    },
+    {
+      "label": "SEDD 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "7.5 [1–16], Δ15",
+        "14 [3–21], Δ18",
+        "13 [5–20], Δ15",
+        "50.5 [43–60], Δ17"
+      ],
+      "description": "unique payload b8c55ee56ca2"
+    },
+    {
+      "label": "FLM 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "53.5 [50–60], Δ10",
+        "53 [51–57], Δ6",
+        "52.5 [52–57], Δ5",
+        "9 [7–13], Δ6"
+      ],
+      "description": "unique payload f9649eded07b"
+    },
+    {
+      "label": "FLM 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "47.5 [41–51], Δ10",
+        "49 [41–51], Δ10",
+        "48 [39–49], Δ10",
+        "15.5 [14–21], Δ7"
+      ],
+      "description": "unique payload dc586e84dbc9"
+    },
+    {
+      "label": "FLM 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "30 [9–36], Δ27",
+        "32.5 [17–41], Δ24",
+        "32 [19–43], Δ24",
+        "30 [17–43], Δ26"
+      ],
+      "description": "unique payload 7bed33430ea9"
+    },
+    {
+      "label": "FLM 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "32 [20–37], Δ17",
+        "32.5 [24–38], Δ14",
+        "32.5 [23–40], Δ17",
+        "25.5 [19–40], Δ21"
+      ],
+      "description": "unique payload d76aabf70d5d"
+    },
+    {
+      "label": "FLM 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "33 [25–39], Δ14",
+        "34 [27–37], Δ10",
+        "35.5 [28–39], Δ11",
+        "23 [18–36], Δ18"
+      ],
+      "description": "unique payload 34b405717a09"
+    },
+    {
+      "label": "FMLM 1-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "55.5 [45–57], Δ12",
+        "56 [55–57], Δ2",
+        "56 [55–57], Δ2",
+        "5 [1.5–6], Δ4.5"
+      ],
+      "description": "unique payload 2f2e3cc5059e"
+    },
+    {
+      "label": "FMLM 4-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "47.5 [33–50], Δ17",
+        "49 [47–50], Δ3",
+        "50 [48–51], Δ3",
+        "9 [8–15], Δ7"
+      ],
+      "description": "unique payload 17508b201f08"
+    },
+    {
+      "label": "FMLM 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "42 [29–44], Δ15",
+        "45 [39–47], Δ8",
+        "46.5 [40–48], Δ8",
+        "12 [6–24], Δ18"
+      ],
+      "description": "unique payload 0caee3fa0cf6"
+    },
+    {
+      "label": "FMLM 16-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "38 [34–41], Δ7",
+        "41 [37–48], Δ11",
+        "43 [39–48], Δ9",
+        "17 [11–26], Δ15"
+      ],
+      "description": "unique payload bf347650a261"
+    },
+    {
+      "label": "FMLM 32-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "41 [35–45], Δ10",
+        "42.5 [39–53], Δ14",
+        "45 [42–54], Δ12",
+        "13 [6–19], Δ13"
+      ],
+      "description": "unique payload eae0e16c5579"
+    },
+    {
+      "label": "LangFlow 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "6 [2–37], Δ35",
+        "11 [1–22], Δ21",
+        "8 [1–21], Δ20",
+        "55 [39–60], Δ21"
+      ],
+      "description": "unique payload d907c2d66517"
+    },
+    {
+      "label": "Duo 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "48 [18–52], Δ34",
+        "51.5 [23–52], Δ29",
+        "51.5 [26–53], Δ27",
+        "11.5 [9–44], Δ35"
+      ],
+      "description": "unique payload 627c0f0939e3"
+    },
+    {
+      "label": "Duo 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "29.5 [11–37], Δ26",
+        "31.5 [15–41], Δ26",
+        "32 [15–41], Δ26",
+        "34.5 [24–49], Δ25"
+      ],
+      "description": "unique payload b70f9fa7da98"
+    },
+    {
+      "label": "Duo 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "22 [14–28], Δ14",
+        "27 [11–32], Δ21",
+        "26.5 [9–32], Δ23",
+        "38.5 [29–50], Δ21"
+      ],
+      "description": "unique payload a28f4050c65c"
+    },
+    {
+      "label": "Duo 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "18.5 [15–27], Δ12",
+        "22.5 [7–28], Δ21",
+        "23 [4–27], Δ23",
+        "40.5 [38–48], Δ10"
+      ],
+      "description": "unique payload f446670e86d1"
+    },
+    {
+      "label": "Duo 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "21 [16–29], Δ13",
+        "23 [8–31], Δ23",
+        "23 [3–27], Δ24",
+        "42 [36–47], Δ11"
+      ],
+      "description": "unique payload 581f702bae92"
+    },
+    {
+      "label": "Duo Distilled 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "36 [22–43], Δ21",
+        "38 [25–48], Δ23",
+        "39.5 [29–47], Δ18",
+        "25.5 [15–34], Δ19"
+      ],
+      "description": "unique payload 39f1b77e726b"
+    },
+    {
+      "label": "Duo Distilled 16-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "19.5 [15–26], Δ11",
+        "22 [17–29], Δ12",
+        "23.5 [19–29], Δ10",
+        "39 [28–47], Δ19"
+      ],
+      "description": "unique payload e2c60095f98b"
+    },
+    {
+      "label": "Duo Distilled 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "13.5 [10–15], Δ5",
+        "13.5 [7–17], Δ10",
+        "13.5 [7–17], Δ10",
+        "47.5 [43–48], Δ5"
+      ],
+      "description": "unique payload 21d6b6f40e1f"
+    },
+    {
+      "label": "RePlaid 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "7 [2–13], Δ11",
+        "7.5 [2–14], Δ12",
+        "7.5 [2–14], Δ12",
+        "51.5 [45–59], Δ14"
+      ],
+      "description": "unique payload 518d2d10ce43"
+    },
+    {
+      "label": "Plaid 256-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "2.5 [1–46], Δ45",
+        "4 [1–16], Δ15",
+        "3.5 [1–13], Δ12",
+        "57.5 [41–60], Δ19"
+      ],
+      "description": "unique payload 07278858384e"
+    },
+    {
+      "label": "Plaid 1024-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "6 [3–52], Δ49",
+        "4 [2–20], Δ18",
+        "3.5 [2–16], Δ14",
+        "57.5 [46–60], Δ14"
+      ],
+      "description": "unique payload 1058c429d4fa"
+    },
+    {
+      "label": "Plaid 4096-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "4.5 [2–51], Δ49",
+        "3 [1–21], Δ20",
+        "2 [1–17], Δ16",
+        "57.5 [45–59], Δ14"
+      ],
+      "description": "unique payload bfcc2512c475"
+    },
+    {
+      "label": "ELF-L 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "37 [26–47], Δ21",
+        "34 [32–46], Δ14",
+        "34 [33–44], Δ11",
+        "24.5 [16–30], Δ14"
+      ],
+      "description": "unique payload 0d5c54c8b96e"
+    },
+    {
+      "label": "ELF-L 32-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "22.5 [4–30], Δ26",
+        "13.5 [5–30], Δ25",
+        "13 [5–24], Δ19",
+        "42.5 [21–54], Δ33"
+      ],
+      "description": "unique payload f504867cdffc"
+    },
+    {
+      "label": "ELF-L 64-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "23 [7–28], Δ21",
+        "13.5 [7–32], Δ25",
+        "12.5 [6–25], Δ19",
+        "43 [25–55], Δ30"
+      ],
+      "description": "unique payload 1fe61aa34fa6"
+    },
+    {
+      "label": "ELF-L 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "27 [12–38], Δ26",
+        "17.5 [9–38], Δ29",
+        "16.5 [8–38], Δ30",
+        "41 [20–53], Δ33"
+      ],
+      "description": "unique payload 5c96eee660c8"
+    },
+    {
+      "label": "ELF-M 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "44.5 [36–49], Δ13",
+        "40 [35–49], Δ14",
+        "38.5 [35–47], Δ12",
+        "18 [10–26], Δ16"
+      ],
+      "description": "unique payload e85143e9831c"
+    },
+    {
+      "label": "ELF-M 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "26 [8–39], Δ31",
+        "17 [8–36], Δ28",
+        "16 [8–31], Δ23",
+        "37.5 [23–51], Δ28"
+      ],
+      "description": "unique payload 3fc2041f8ad3"
+    },
+    {
+      "label": "ELF-M 64-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "12.5 [5–32], Δ27",
+        "7 [4–29], Δ25",
+        "7 [4–27], Δ23",
+        "50.5 [30–56], Δ26"
+      ],
+      "description": "unique payload 5663500f2d51"
+    },
+    {
+      "label": "ELF-M 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "13.5 [9–41], Δ32",
+        "10 [6–39], Δ33",
+        "10 [5–40], Δ35",
+        "47 [26–54], Δ28"
+      ],
+      "description": "unique payload 16ea6daeb24f"
+    },
+    {
+      "label": "ELF-B 8-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "49.5 [47–54], Δ7",
+        "46.5 [43–52], Δ9",
+        "44.5 [38–50], Δ12",
+        "14 [9–24], Δ15"
+      ],
+      "description": "unique payload db2a238660d1"
+    },
+    {
+      "label": "ELF-B 32-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "31.5 [14–44], Δ30",
+        "22 [12–46], Δ34",
+        "21 [12–43], Δ31",
+        "34.5 [19–48], Δ29"
+      ],
+      "description": "unique payload 155dd4b33bc8"
+    },
+    {
+      "label": "ELF-B 64-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "20 [13–43], Δ30",
+        "14 [8–41], Δ33",
+        "13.5 [9–41], Δ32",
+        "40 [29–50], Δ21"
+      ],
+      "description": "unique payload fa6173e5b9c2"
+    },
+    {
+      "label": "ELF-B 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "26 [17–50], Δ33",
+        "25 [12–51], Δ39",
+        "23.5 [12–51], Δ39",
+        "33 [27–46], Δ19"
+      ],
+      "description": "unique payload beec89c84982"
+    },
+    {
+      "label": "CoBit-S 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "42.5 [32–49], Δ17",
+        "41.5 [32–44], Δ12",
+        "42.5 [32–45], Δ13",
+        "25.5 [11–36], Δ25"
+      ],
+      "description": "unique payload d39b2d34abf3"
+    },
+    {
+      "label": "CoBit-S 256-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "42 [30–48], Δ18",
+        "36.5 [16–38], Δ22",
+        "37 [17–39], Δ22",
+        "25.5 [22–40], Δ18"
+      ],
+      "description": "unique payload 20ef8de1067e"
+    },
+    {
+      "label": "CoBit-S 512-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "43.5 [36–54], Δ18",
+        "42 [31–52], Δ21",
+        "40.5 [29–53], Δ24",
+        "24.5 [13–34], Δ21"
+      ],
+      "description": "unique payload 80761eff4bb1"
+    },
+    {
+      "label": "CoBit-M 128-NFE",
+      "views": [
+        "all-models"
+      ],
+      "values": [
+        "36.5 [30–53], Δ23",
+        "28.5 [15–37], Δ22",
+        "27.5 [16–38], Δ22",
+        "30.5 [23–44], Δ21"
+      ],
+      "description": "unique payload 175b003da43f"
+    },
+    {
+      "label": "CoBit-M 256-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "50.5 [40–55], Δ15",
+        "46.5 [26–54], Δ28",
+        "47.5 [31–52], Δ21",
+        "19 [8–42], Δ34"
+      ],
+      "description": "unique payload 0482d3b8b886"
+    },
+    {
+      "label": "CoBit-M 512-NFE",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "54.5 [47–57], Δ10",
+        "51.5 [37–56], Δ19",
+        "52 [38–56], Δ18",
+        "13 [5–39], Δ34"
+      ],
+      "description": "unique payload af81d01bef3c"
+    },
+    {
+      "label": "— Naive samplers (zero-parameter attacks) —",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "section": true
+    },
+    {
+      "label": "Mirror K=5000",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "58 [35–59], Δ24",
+        "58 [50–58], Δ8",
+        "58 [50–58], Δ8",
+        "2.5 [1–9], Δ8"
+      ],
+      "description": "unique payload 217b1f171b9d"
+    },
+    {
+      "label": "Periodic-k 400",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "60 [58–60], Δ2",
+        "60 [59–60], Δ1",
+        "60 [59–60], Δ1",
+        "2.25 [1–6], Δ5"
+      ],
+      "description": "unique payload 50c4a1ddb487"
+    },
+    {
+      "label": "Phrase bank m=5000",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "56.5 [55–58], Δ3",
+        "57 [56–58], Δ2",
+        "57 [56–58], Δ2",
+        "3.5 [2.5–4], Δ1.5"
+      ],
+      "description": "unique payload 629b28c40239"
+    },
+    {
+      "label": "Top-k IID k=64",
+      "views": [
+        "short-list",
+        "all-models"
+      ],
+      "values": [
+        "59 [59–60], Δ1",
+        "59 [59–60], Δ1",
+        "59 [59–60], Δ1",
+        "2.75 [1–6], Δ5"
+      ],
+      "description": "unique payload 0ea0953a73dd"
+    },
+    {
+      "label": "LM1B (L=128)",
+      "views": [
+        "lm1b"
+      ],
+      "section": true
+    },
+    {
+      "label": "LM1B train data",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "label": "MDLM 1024-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "3 [1–6], Δ5",
+        "3.5 [2–7], Δ5",
+        "3.5 [2–7], Δ5",
+        "11.5 [9–12], Δ3"
+      ],
+      "description": "unique payload 3b5b278cbcf4"
+    },
+    {
+      "label": "Duo 1024-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "2.5 [1–7], Δ6",
+        "3.5 [1–5], Δ4",
+        "3.5 [1–5], Δ4",
+        "12 [8–13], Δ5"
+      ],
+      "description": "unique payload 7e104b093dd4"
+    },
+    {
+      "label": "FLM 1024-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "3.5 [3–5], Δ2",
+        "3 [2–6], Δ4",
+        "3 [2–6], Δ4",
+        "9 [6–11], Δ5"
+      ],
+      "description": "unique payload a60278722293"
+    },
+    {
+      "label": "FMLM 1-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "9.5 [9–10], Δ1",
+        "10 [9–10], Δ1",
+        "10 [9–10], Δ1",
+        "4.5 [3–5], Δ2"
+      ],
+      "description": "unique payload fe851292fdb0"
+    },
+    {
+      "label": "FMLM 4-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "8 [6–9], Δ3",
+        "8 [6–9], Δ3",
+        "8 [6–9], Δ3",
+        "6 [5–8], Δ3"
+      ],
+      "description": "unique payload 95fe064644c8"
+    },
+    {
+      "label": "FMLM 32-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "6.5 [5–8], Δ3",
+        "6 [5–8], Δ3",
+        "6 [5–8], Δ3",
+        "8 [7–9], Δ2"
+      ],
+      "description": "unique payload b2d0217629df"
+    },
+    {
+      "label": "LangFlow 128-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "3.5 [1–7], Δ6",
+        "3.5 [1–7], Δ6",
+        "3.5 [1–7], Δ6",
+        "11 [8–13], Δ5"
+      ],
+      "description": "unique payload ba315f5ee324"
+    },
+    {
+      "label": "LangFlow 1024-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "3.5 [1–9], Δ8",
+        "3 [1–8], Δ7",
+        "3 [1–8], Δ7",
+        "11 [6–13], Δ7"
+      ],
+      "description": "unique payload 9bf2d512b772"
+    },
+    {
+      "label": "RDLM 1000-NFE",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "6 [1–7], Δ6",
+        "6.5 [1–7], Δ6",
+        "6.5 [1–7], Δ6",
+        "7.5 [6–10], Δ4"
+      ],
+      "description": "unique payload cf760a62da31"
+    },
+    {
+      "label": "— Naive samplers (zero-parameter attacks) —",
+      "views": [
+        "lm1b"
+      ],
+      "section": true
+    },
+    {
+      "label": "Mirror K=5000",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "10.5 [3–11], Δ8",
+        "11 [3–11], Δ8",
+        "11 [3–11], Δ8",
+        "3.75 [1.5–13], Δ11.5"
+      ],
+      "description": "unique payload 4258a9be684b"
+    },
+    {
+      "label": "Periodic-k 64",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "12.5 [12–13], Δ1",
+        "13 [12–13], Δ1",
+        "13 [13–13], Δ0",
+        "1.5 [1–3], Δ2"
+      ],
+      "description": "unique payload 0808b0ffe88d"
+    },
+    {
+      "label": "Phrase bank m=1000",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "10.5 [9–11], Δ2",
+        "10 [9–11], Δ2",
+        "10 [9–11], Δ2",
+        "3.25 [1.5–5], Δ3.5"
+      ],
+      "description": "unique payload b893cf1f7dd4"
+    },
+    {
+      "label": "Top-k IID k=32",
+      "views": [
+        "lm1b"
+      ],
+      "values": [
+        "12.5 [12–13], Δ1",
+        "12 [12–13], Δ1",
+        "12 [12–12], Δ0",
+        "1.75 [1.5–4], Δ2.5"
+      ],
+      "description": "unique payload 390d3835f7fa"
+    }
+  ],
+  "source": {
+    "source_file": "per-bank-rank-movement-across-encoders.json",
+    "source_sha256": "3615915d4b8429b3c98e77eea7b942a1c29dae6c7be5eab9b1edfa117d440409"
+  }
+}

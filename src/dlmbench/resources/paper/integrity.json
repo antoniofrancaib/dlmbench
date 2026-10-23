@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "algorithm": "sha256",
+  "scope": "exact packaged resource file bytes; detects any changed finite value independent of source_sha256 fields",
+  "resources": {
+    "rebenchmark": "6dc8ac0efc6798576d360a42729367017a5544da6b4a9c6c86a3e0895e66b087",
+    "archived_sweep": "083a5d9fadfc592c21a51f86bc237c0896b7989b42bfe0a0534026a38018ef44",
+    "judgments": "918ab73def42754a792ad84645f214614953fab2b2eb9db36e7353dd24235745",
+    "sources": "a395a5515f8a3fd96fa77a407c4ffa7fd6eca8eba9ccdd6d3ee363591c468173",
+    "mauve_sample_count": "b0725c5e1a268f2cab6d1ed99384bf1cd0caa80347ece0451c23da9e2644a86f",
+    "gen_ppl_context_horizons": "320758cb03c593aba0c7267051f04d73a82548b00c4287358d70c199206f26d1",
+    "jcd_directional": "737ede3b49f9c7c20ddb0c046e24918e4f3eb2a7597911f97926f9b6555d53f2",
+    "entropy_census": "c3caf1bb42f0bb98074413606577ca10494f076c7dfb57d9106a4ef792c0ed80",
+    "entropy_controls": "3da76456412061a0eefd2a938233767169cd6d881eb313b86943018afb173c1e",
+    "encoder_rank_sensitivity": "50a4447ecfc2447e5faeaa8f3df5ef032a4b3401410a8e51884d52bf354d2a71",
+    "encoder_rank_movement": "f1d8017763c15fb4b07da858110e32458275a99c5d2c65628199c122c54573b7",
+    "encoder_pairwise_agreement": "9ae29f55ab7f671bcce26daf4086e80c3f84b507dca5ca208588589226d2ec90",
+    "encoder_pair_leaderboard": "ff87e7baafb5fd96577a84e9c50319121c83379981207ff716c9030be9b22d83",
+    "encoder_scores_ranks": "ee380dd0d4419e7e2a3cd19fec858e134bb861b3c04013fae65eda6f0cdd48e5"
+  }
+}

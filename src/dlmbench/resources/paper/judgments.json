@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "excluded-from-release",
+  "raw_judgments_bundled": false,
+  "llm_pairwise": {
+    "paper_cited_sha256": "865e1449ed6f6bf46830be8e983dae9d076066418842ba61146bc977d6eefd1f",
+    "cohort": {
+      "dataset": "owt",
+      "banks": 21,
+      "comparisons": 16560,
+      "judges": 4
+    },
+    "bundled": false
+  },
+  "human": {
+    "paper_cited_input": "Figures/Metric-Agreement-Human-300/human_snapshot.json",
+    "cohort": {
+      "dataset": "owt",
+      "trained_generators": 12,
+      "recorded_comparisons": 304,
+      "retained_comparisons": 300,
+      "excluded_comparisons": 4,
+      "raters": 9
+    },
+    "bundled": false
+  },
+  "method": {
+    "elo": {
+      "initial_rating": 1500.0,
+      "k": 32.0,
+      "tie_score": 0.5,
+      "order": "explicit event order"
+    }
+  },
+  "limitations": [
+    "Raw judgments and judgment replay are excluded from this release.",
+    "Manuscript display ratings and correlations are not recomputed judgments."
+  ]
+}

@@ -1,0 +1,756 @@
+{
+  "schema_version": 1,
+  "families": {
+    "naive": {
+      "samplers": [
+        "topk_iid",
+        "mirror",
+        "periodic_k",
+        "phrase_bank"
+      ],
+      "support": "portable",
+      "requires_upstream_code": false
+    },
+    "ar": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "mdlm": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "sedd": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "duo": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "flm-hydra": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "sdtt-official": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "langflow": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "rdlm": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "elf": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "cobit": {
+      "support": "portable-unverified",
+      "requires_upstream_code": true
+    },
+    "unsupported": {
+      "support": "unsupported",
+      "requires_upstream_code": false
+    },
+    "author-provided": {
+      "support": "samples-only",
+      "requires_upstream_code": false
+    }
+  },
+  "generators": [
+    {
+      "id": "lm1b_duo_1024_nfe",
+      "label": "Duo LM1B 1024-NFE",
+      "dataset": "lm1b",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 16,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "s-sahoo/duo via flm-hydra; checkpoint lm1b/duo/base/model.ckpt",
+      "limitations": [],
+      "algorithm": "duo",
+      "sampling": {
+        "algorithm": "duo",
+        "nfe": 1024,
+        "steps": 1024,
+        "predictor": "ancestral",
+        "noise_removal": "ancestral"
+      },
+      "steps": 1024,
+      "double_temb": null,
+      "disable_ema": null
+    },
+    {
+      "id": "lm1b_flm_1024_nfe",
+      "label": "FLM 1024-NFE",
+      "dataset": "lm1b",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 32,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "david3684/flm flm-hydra backend; checkpoint lm1b/flm/base/model.ckpt",
+      "limitations": [],
+      "algorithm": "flm",
+      "sampling": {
+        "algorithm": "flm-euler",
+        "nfe": 1024,
+        "steps": 1024
+      },
+      "steps": 1024,
+      "double_temb": false,
+      "disable_ema": false
+    },
+    {
+      "id": "lm1b_fmlm_1_nfe",
+      "label": "FMLM 1-NFE",
+      "dataset": "lm1b",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 16,
+      "nfe": 1,
+      "actual_nfe": 1,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "david3684/flm flm-hydra backend; distilled checkpoint",
+      "limitations": [],
+      "algorithm": "fmlm",
+      "sampling": {
+        "algorithm": "fmlm-flow-matching",
+        "nfe": 1,
+        "steps": 1,
+        "gamma": 0.8
+      },
+      "steps": 1,
+      "double_temb": true,
+      "disable_ema": false
+    },
+    {
+      "id": "lm1b_fmlm_32_nfe",
+      "label": "FMLM 32-NFE",
+      "dataset": "lm1b",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 16,
+      "nfe": 32,
+      "actual_nfe": 32,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "david3684/flm flm-hydra backend; distilled checkpoint",
+      "limitations": [],
+      "algorithm": "fmlm",
+      "sampling": {
+        "algorithm": "fmlm-flow-matching",
+        "nfe": 32,
+        "steps": 32,
+        "gamma": 0.8
+      },
+      "steps": 32,
+      "double_temb": true,
+      "disable_ema": false
+    },
+    {
+      "id": "lm1b_fmlm_4_nfe",
+      "label": "FMLM 4-NFE",
+      "dataset": "lm1b",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 16,
+      "nfe": 4,
+      "actual_nfe": 4,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "david3684/flm flm-hydra backend; distilled checkpoint",
+      "limitations": [],
+      "algorithm": "fmlm",
+      "sampling": {
+        "algorithm": "fmlm-flow-matching",
+        "nfe": 4,
+        "steps": 4,
+        "gamma": 0.8
+      },
+      "steps": 4,
+      "double_temb": true,
+      "disable_ema": false
+    },
+    {
+      "id": "lm1b_langflow_1024_nfe",
+      "label": "LangFlow LM1B 1024-NFE",
+      "dataset": "lm1b",
+      "family": "langflow",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 8,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "nealchen2003/LangFlow inference.py at pinned commit a712b08; tokenizer bert-base-uncased",
+      "limitations": [],
+      "sampling": {
+        "algorithm": "langflow-euler-edm",
+        "nfe": 1024,
+        "steps": 1024
+      },
+      "steps": 1024
+    },
+    {
+      "id": "lm1b_langflow_128_nfe",
+      "label": "LangFlow LM1B 128-NFE",
+      "dataset": "lm1b",
+      "family": "langflow",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 8,
+      "nfe": 128,
+      "actual_nfe": 128,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "nealchen2003/LangFlow inference.py at pinned commit a712b08; the paper reports the LM1B operating point at 128 NFEs; tokenizer bert-base-uncased",
+      "limitations": [],
+      "sampling": {
+        "algorithm": "langflow-euler-edm",
+        "nfe": 128,
+        "steps": 128
+      },
+      "steps": 128
+    },
+    {
+      "id": "lm1b_mdlm_1024_nfe",
+      "label": "MDLM LM1B 1024-NFE",
+      "dataset": "lm1b",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 64,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "s-sahoo/duo codebase via flm-hydra; checkpoint lm1b/mdlm/base/model.ckpt",
+      "limitations": [],
+      "algorithm": "mdlm",
+      "sampling": {
+        "algorithm": "mdlm-ancestral-cache",
+        "nfe": 1024,
+        "steps": 1024,
+        "predictor": "ancestral_cache",
+        "noise_removal": "ancestral"
+      },
+      "steps": 1024,
+      "double_temb": null,
+      "disable_ema": null
+    },
+    {
+      "id": "lm1b_mirror_5000",
+      "label": "Mirror K=5000",
+      "dataset": "lm1b",
+      "family": "naive",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": null,
+      "nfe": null,
+      "actual_nfe": null,
+      "support": "portable",
+      "command_assembly": "native",
+      "source": "Historical lm-bench na\u00efve sampler at commit 90aee5a761f4662bb44eaae452530946f7e6ad2a.",
+      "limitations": [],
+      "sampler": "mirror",
+      "parameters": {
+        "source_k": 5000
+      },
+      "k": null,
+      "source_k": 5000
+    },
+    {
+      "id": "lm1b_periodic_k_64",
+      "label": "Periodic-k 64",
+      "dataset": "lm1b",
+      "family": "naive",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": null,
+      "nfe": null,
+      "actual_nfe": null,
+      "support": "portable",
+      "command_assembly": "native",
+      "source": "Historical lm-bench na\u00efve sampler at commit 90aee5a761f4662bb44eaae452530946f7e6ad2a.",
+      "limitations": [],
+      "sampler": "periodic_k",
+      "parameters": {
+        "k": 64
+      },
+      "k": 64,
+      "source_k": null
+    },
+    {
+      "id": "lm1b_phrase_bank_1000",
+      "label": "Phrase bank m=1000",
+      "dataset": "lm1b",
+      "family": "naive",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": null,
+      "nfe": null,
+      "actual_nfe": null,
+      "support": "portable",
+      "command_assembly": "native",
+      "source": "Historical lm-bench na\u00efve sampler at commit 90aee5a761f4662bb44eaae452530946f7e6ad2a.",
+      "limitations": [],
+      "sampler": "phrase_bank",
+      "parameters": {
+        "m": 1000,
+        "ngram": 5
+      },
+      "k": null,
+      "source_k": null
+    },
+    {
+      "id": "lm1b_rdlm_1000_nfe",
+      "label": "RDLM LM1B 1000-NFE",
+      "dataset": "lm1b",
+      "family": "rdlm",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 1,
+      "batch_size": 32,
+      "nfe": 1000,
+      "actual_nfe": 1000,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "harryjo97/RDLM vendored at 67443aa; checkpoint lm1b/rdlm/base/checkpoint.pth",
+      "limitations": [],
+      "sampling": {
+        "algorithm": "rdlm-grw",
+        "nfe": 1000,
+        "steps": 1000,
+        "predictor": "grw"
+      },
+      "steps": 1000
+    },
+    {
+      "id": "lm1b_topk_iid_k32",
+      "label": "Top-k IID k=32",
+      "dataset": "lm1b",
+      "family": "naive",
+      "n_samples": 1024,
+      "sequence_length": 128,
+      "seed": 0,
+      "batch_size": null,
+      "nfe": null,
+      "actual_nfe": null,
+      "support": "portable",
+      "command_assembly": "native",
+      "source": "Historical lm-bench na\u00efve sampler at commit 90aee5a761f4662bb44eaae452530946f7e6ad2a.",
+      "limitations": [],
+      "sampler": "topk_iid",
+      "parameters": {
+        "k": 32
+      },
+      "k": 32,
+      "source_k": null
+    },
+    {
+      "id": "owt_ar_base",
+      "label": "AR OWT",
+      "dataset": "owt",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 8,
+      "nfe": 1,
+      "actual_nfe": 1,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "s-sahoo/duo codebase AR sampler via flm-hydra",
+      "limitations": [],
+      "algorithm": "ar",
+      "sampling": {
+        "algorithm": "ar-autoregressive",
+        "nfe": 1,
+        "steps": 1
+      },
+      "steps": 1,
+      "double_temb": null,
+      "disable_ema": null
+    },
+    {
+      "id": "owt_duo_base_1024_nfe",
+      "label": "Duo OWT 1024-NFE",
+      "dataset": "owt",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 8,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "s-sahoo/duo via flm-hydra",
+      "limitations": [],
+      "algorithm": "duo_base",
+      "sampling": {
+        "algorithm": "duo_base",
+        "nfe": 1024,
+        "steps": 1024,
+        "predictor": "ancestral",
+        "noise_removal": "ancestral"
+      },
+      "steps": 1024,
+      "double_temb": null,
+      "disable_ema": null
+    },
+    {
+      "id": "owt_flm_1024_nfe",
+      "label": "FLM 1024-NFE",
+      "dataset": "owt",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 16,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "david3684/flm flm-hydra backend",
+      "limitations": [],
+      "algorithm": "flm",
+      "sampling": {
+        "algorithm": "flm-euler",
+        "nfe": 1024,
+        "steps": 1024
+      },
+      "steps": 1024,
+      "double_temb": false,
+      "disable_ema": false
+    },
+    {
+      "id": "owt_fmlm_32_nfe",
+      "label": "FMLM 32-NFE",
+      "dataset": "owt",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 16,
+      "nfe": 32,
+      "actual_nfe": 32,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "david3684/flm; gamma=1.0",
+      "limitations": [],
+      "algorithm": "fmlm",
+      "sampling": {
+        "algorithm": "fmlm-flow-matching",
+        "nfe": 32,
+        "steps": 32,
+        "gamma": 1.0
+      },
+      "steps": 32,
+      "double_temb": true,
+      "disable_ema": false
+    },
+    {
+      "id": "owt_langflow_1024_nfe",
+      "label": "LangFlow OWT 1024-NFE",
+      "dataset": "owt",
+      "family": "langflow",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 8,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "nealchen2003/LangFlow inference.py at pinned commit a712b08; tokenizer gpt2",
+      "limitations": [],
+      "sampling": {
+        "algorithm": "langflow-euler-edm",
+        "nfe": 1024,
+        "steps": 1024
+      },
+      "steps": 1024
+    },
+    {
+      "id": "owt_mdlm_1024_nfe",
+      "label": "MDLM OWT 1024-NFE",
+      "dataset": "owt",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 16,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "s-sahoo/duo codebase via flm-hydra",
+      "limitations": [],
+      "algorithm": "mdlm",
+      "sampling": {
+        "algorithm": "mdlm-ancestral-cache",
+        "nfe": 1024,
+        "steps": 1024,
+        "predictor": "ancestral_cache",
+        "noise_removal": "ancestral"
+      },
+      "steps": 1024,
+      "double_temb": null,
+      "disable_ema": null
+    },
+    {
+      "id": "owt_mirror_5000",
+      "label": "Mirror K=5000",
+      "dataset": "owt",
+      "family": "naive",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": null,
+      "nfe": null,
+      "actual_nfe": null,
+      "support": "portable",
+      "command_assembly": "native",
+      "source": "Historical lm-bench na\u00efve sampler at commit 90aee5a761f4662bb44eaae452530946f7e6ad2a.",
+      "limitations": [],
+      "sampler": "mirror",
+      "parameters": {
+        "source_k": 5000
+      },
+      "k": null,
+      "source_k": 5000
+    },
+    {
+      "id": "owt_periodic_k_400",
+      "label": "Periodic-k 400",
+      "dataset": "owt",
+      "family": "naive",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": null,
+      "nfe": null,
+      "actual_nfe": null,
+      "support": "portable",
+      "command_assembly": "native",
+      "source": "Historical lm-bench na\u00efve sampler at commit 90aee5a761f4662bb44eaae452530946f7e6ad2a.",
+      "limitations": [],
+      "sampler": "periodic_k",
+      "parameters": {
+        "k": 400
+      },
+      "k": 400,
+      "source_k": null
+    },
+    {
+      "id": "owt_phrase_bank_5000",
+      "label": "Phrase bank m=5000",
+      "dataset": "owt",
+      "family": "naive",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": null,
+      "nfe": null,
+      "actual_nfe": null,
+      "support": "portable",
+      "command_assembly": "native",
+      "source": "Historical lm-bench na\u00efve sampler at commit 90aee5a761f4662bb44eaae452530946f7e6ad2a.",
+      "limitations": [],
+      "sampler": "phrase_bank",
+      "parameters": {
+        "m": 5000,
+        "ngram": 5
+      },
+      "k": null,
+      "source_k": null
+    },
+    {
+      "id": "owt_sdtt_mdlm_teacher_1024_nfe",
+      "label": "SDTT Teacher 1024-step",
+      "dataset": "owt",
+      "family": "sdtt-official",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 32,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "jdeschena/sdtt official main.py mode=sample at pinned commit 1150985; CPU staging converts the model-only safetensors into a Lightning state-dict envelope, local-model loading disables EMA, a minimal pkg_resources namespace shim is supplied for the locked Lightning 2.2 stack (setuptools 83; torchdata is not required by the sampling path), and 1024-step sampling is ~96 min",
+      "limitations": [],
+      "sampling": {
+        "algorithm": "ancestral",
+        "nfe": 1024,
+        "steps": 1024,
+        "effective_seed": 100,
+        "seed_note": "official SDTT sample_uncond hardcodes seed 100 on a single device"
+      },
+      "steps": 1024
+    },
+    {
+      "id": "owt_sedd_1024_nfe",
+      "label": "SEDD OWT 1024-NFE",
+      "dataset": "owt",
+      "family": "flm-hydra",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 8,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "s-sahoo/duo codebase via flm-hydra",
+      "limitations": [],
+      "algorithm": "sedd",
+      "sampling": {
+        "algorithm": "sedd-analytic",
+        "nfe": 1024,
+        "steps": 1024,
+        "predictor": "analytic"
+      },
+      "steps": 1024,
+      "double_temb": null,
+      "disable_ema": null
+    },
+    {
+      "id": "owt_topk_iid_k64",
+      "label": "Top-k IID k=64",
+      "dataset": "owt",
+      "family": "naive",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 0,
+      "batch_size": null,
+      "nfe": null,
+      "actual_nfe": null,
+      "support": "portable",
+      "command_assembly": "native",
+      "source": "Historical lm-bench na\u00efve sampler at commit 90aee5a761f4662bb44eaae452530946f7e6ad2a.",
+      "limitations": [],
+      "sampler": "topk_iid",
+      "parameters": {
+        "k": 64
+      },
+      "k": 64,
+      "source_k": null
+    },
+    {
+      "id": "owt_v2_cobit_m_256_nfe",
+      "label": "CoBit-M OWT 256-NFE",
+      "dataset": "owt",
+      "family": "cobit",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 64,
+      "nfe": 256,
+      "actual_nfe": 256,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "GBATZOLIS/BitstreamDiffusion vendored at 7c93d1d; checkpoint cobit_m_owt_750k_ema.pt",
+      "limitations": [],
+      "sampling": {
+        "algorithm": "cobit-ddim-entropic",
+        "nfe": 256,
+        "steps": 256,
+        "prompt_len_tokens": 0,
+        "stochastic": true,
+        "entropy_rate_gamma": 0.21,
+        "s_churn": 53.55,
+        "s_noise": 1.003,
+        "terminal_time": 0.08
+      },
+      "steps": 256
+    },
+    {
+      "id": "owt_v2_elf_m_64_nfe",
+      "label": "ELF-M OWT 64-NFE",
+      "dataset": "owt",
+      "family": "elf",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 64,
+      "nfe": 64,
+      "actual_nfe": 64,
+      "support": "portable-unverified",
+      "command_assembly": "upstream",
+      "source": "lillian039/ELF pytorch_elf branch; checkpoint embedded-language-flows/ELF-M-owt-torch",
+      "limitations": [],
+      "sampling": {
+        "algorithm": "elf-sde",
+        "nfe": 64,
+        "steps": 64,
+        "sde_gamma": 1.0
+      },
+      "steps": 64
+    },
+    {
+      "id": "owt_v2_plaid_1024_nfe",
+      "label": "Plaid 1B 1024-NFE",
+      "dataset": "owt",
+      "family": "unsupported",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": 1,
+      "batch_size": 8,
+      "nfe": 1024,
+      "actual_nfe": 1024,
+      "support": "unsupported",
+      "command_assembly": "upstream",
+      "source": "igul222/plaid; adapter held out until upstream output path and checkpoint loading are audited",
+      "limitations": [
+        "No verified portable generation command is available."
+      ]
+    },
+    {
+      "id": "owt_v2_replaid_nosc_ddpm_1024_nfe",
+      "label": "RePlaid OWT no-SC DDPM 1024-step",
+      "dataset": "owt",
+      "family": "author-provided",
+      "n_samples": 1024,
+      "sequence_length": 1024,
+      "seed": null,
+      "batch_size": null,
+      "nfe": 1024,
+      "actual_nfe": 1025,
+      "support": "samples-only",
+      "command_assembly": "upstream",
+      "source": "Author-provided samples from Zhihan Yang; metrics exactly match the RePlaid no-SC DDPM T=1024 point in arXiv:2605.18530v1 Figure 3.",
+      "limitations": [
+        "No verified portable generation command is available."
+      ]
+    }
+  ]
+}
