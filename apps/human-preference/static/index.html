@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <title>OWT · Human preference</title>
+  <link rel="stylesheet" href="/app.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="page-shell">
+    <header>
+      <div class="masthead"><a class="brand" href="/" aria-label="OWT human preference home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>OWT <span class="brand-divider">/</span> HUMAN EVALUATION</a><span class="connection"><span class="status-dot" aria-hidden="true"></span><span id="connection-text">Connecting</span></span></div>
+      <div class="hero"><div><p class="eyebrow">A LITTLE HUMAN JUDGMENT</p><h1>Human preference</h1><p class="hero-description">Two samples. One considered choice.</p></div><span id="session-description" class="anonymous-note">Anonymous feedback · no name needed</span></div>
+      <div class="navigation-row"><div class="tabs" role="tablist" aria-label="Study views"><button id="comparison-tab" class="tab active" role="tab" aria-selected="true" aria-controls="comparison-view" tabindex="0">Comparison</button><button id="rankings-tab" class="tab" role="tab" aria-selected="false" aria-controls="rankings-view" tabindex="-1">Live rankings <span class="live-dot" aria-hidden="true"></span></button></div><div class="progress"><span><strong id="your-votes">0</strong> your ratings</span><span class="progress-divider" aria-hidden="true"></span><span><strong id="total-votes">0</strong> total</span></div></div>
+    </header>
+    <main>
+      <div id="error" class="error-banner" role="alert" hidden><span id="error-text"></span><button id="retry-button" type="button">Try again</button></div>
+      <section id="comparison-view" class="tab-panel" role="tabpanel" aria-labelledby="comparison-tab">
+        <div class="comparison-heading"><div><h2>Which sample reads better?</h2><p>Consider fluency, coherence, and overall writing quality.</p></div><span class="excerpt-badge"><span class="tiny-square" aria-hidden="true"></span><span id="excerpt-size">35</span>-word excerpts</span></div>
+        <div id="samples" class="samples" aria-busy="true">
+          <article class="sample-card" aria-labelledby="sample-a-heading"><div class="sample-heading"><h3 id="sample-a-heading"><span class="sample-letter">A</span> SAMPLE A</h3><span class="sample-meta" id="sample-a-count">35 WORDS</span></div><div class="sample-body"><p id="sample-a" class="sample-text">Loading your first comparison…</p></div><div class="sample-footer"><span class="blind-icon" aria-hidden="true">○</span> Source hidden</div></article>
+          <article class="sample-card" aria-labelledby="sample-b-heading"><div class="sample-heading"><h3 id="sample-b-heading"><span class="sample-letter">B</span> SAMPLE B</h3><span class="sample-meta" id="sample-b-count">35 WORDS</span></div><div class="sample-body"><p id="sample-b" class="sample-text">Loading your first comparison…</p></div><div class="sample-footer"><span class="blind-icon" aria-hidden="true">○</span> Source hidden</div></article>
+        </div>
+        <div class="decision-area"><div class="vote-buttons" role="group" aria-label="Choose your preference"><button type="button" class="vote-button preferred" data-choice="a" disabled><kbd>1</kbd><span>A is better</span><span class="vote-arrow" aria-hidden="true">↖</span></button><button type="button" class="vote-button preferred" data-choice="b" disabled><kbd>2</kbd><span>B is better</span><span class="vote-arrow" aria-hidden="true">↗</span></button></div><div class="decision-details"><span id="save-status" role="status" aria-live="polite">Your choices are saved as you go.</span><div class="secondary-actions"><button id="undo-button" class="text-button" type="button" disabled><span aria-hidden="true">↶</span> Undo last choice</button><span class="action-divider" aria-hidden="true"></span><button id="skip-button" class="text-button" type="button" disabled>Skip this pair <span aria-hidden="true">→</span></button></div></div></div>
+        <div class="study-note"><span class="note-icon" aria-hidden="true">i</span><p>Judge only the text you see. Excerpts may end mid-sentence; you don’t need to verify factual claims. Choose A or B. Use Skip if you cannot decide.</p></div>
+        <div class="finish-area"><p>You can stop whenever you like. Completing 78 comparisons covers every source pair once. Finishing ends your voting session and reveals the rankings.</p><button id="finish-button" class="vote-button" type="button" disabled>Finish and see rankings</button></div>
+        <div class="comparison-bottom"><span><strong id="source-count">13</strong> sources <span aria-hidden="true">·</span> OWT only <span aria-hidden="true">·</span> Naive generators excluded</span><span id="available-samples">13,312 samples in the study</span></div>
+      </section>
+      <section id="rankings-view" class="tab-panel" role="tabpanel" aria-labelledby="rankings-tab" hidden>
+        <div class="comparison-heading ranking-heading"><div><h2>A ranking, taking shape.</h2><p>Every saved comparison updates the standings.</p></div><span class="excerpt-badge"><span class="live-dot" aria-hidden="true"></span> LIVE ELO</span></div>
+        <div class="ranking-stats"><div><span class="stat-label">RATINGS IN ELO</span><strong id="ranking-votes">0</strong></div><div><span class="stat-label">GENERATOR PAIRS COVERED</span><strong><span id="pairs-covered">0</span><span class="stat-denominator"> / <span id="total-pairs">78</span></span></strong></div><div><span class="stat-label">SOURCE LABELS</span><strong id="identity-state" class="stat-text">Model names</strong></div></div>
+        <p id="ranking-provenance" class="ranking-provenance" hidden></p>
+        <div class="table-card"><div class="table-toolbar"><span id="ranking-description">Model names are shown here. Comparison cards stay anonymous.</span></div><div class="table-scroll"><table><caption class="visually-hidden">Live provisional Elo rankings across the 13 OWT sources</caption><thead><tr><th scope="col" class="rank-column">RANK</th><th scope="col">SOURCE</th><th scope="col" class="numeric">ELO</th><th scope="col" class="numeric">MATCHES</th><th scope="col" class="numeric outcome-column">WINS</th><th scope="col" class="numeric outcome-column">TIES</th><th scope="col" class="numeric outcome-column">LOSSES</th></tr></thead><tbody id="ranking-rows"></tbody></table></div><div class="table-foot"><span id="ranking-updated">Waiting for ratings</span><span>Starting Elo 1,500 <span aria-hidden="true">·</span> K = 32</span></div></div>
+        <div class="correlation-section"><div class="section-intro"><h3>Human × LLM preference</h3><p>Exploratory Spearman correlations across the 12 generated sources; the reference is excluded.</p></div><div id="correlation-cards" class="correlation-cards"></div><p class="correlation-caution">Human ratings use 35-word excerpts; LLM evaluations may use longer samples. These correlations are provisional and measure different reading conditions.</p></div>
+        <details class="method-details"><summary>How these rankings work <span aria-hidden="true">+</span></summary><div class="method-content"><p>Elo starts at 1,500 with K = 32. A preference counts as a win and a loss. Skips are excluded from ratings. Unrated sources have no rank.</p><p>These are running estimates. Ratings can change with the order and number of comparisons; early differences do not establish a reliable ranking. Generator-pair coverage shows how many of the 78 possible pairs have been judged.</p><p>Model names are shown automatically in Live rankings. The A/B comparison cards always remain anonymous.</p><div id="export-links" class="export-links" hidden><a id="export-json" href="/api/export?format=json" download>Export study data (includes names) <span>JSON ↗</span></a><a id="export-csv" href="/api/export?format=csv" download>Export study data (includes names) <span>CSV ↗</span></a></div></div></details>
+      </section>
+    </main>
+    <footer class="page-footer"><span>OWT HUMAN PREFERENCE STUDY</span><span>Small judgments. A clearer picture.</span></footer>
+  </div>
+</body>
+</html>

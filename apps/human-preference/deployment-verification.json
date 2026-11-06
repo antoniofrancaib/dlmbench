@@ -1,0 +1,28 @@
+{
+  "verified_at": "2026-11-06T15:24:10.263Z",
+  "url": "https://owt-human-preference.antoniofrancaib.workers.dev",
+  "initial_import": {
+    "events": 561,
+    "responses": 323,
+    "scored": 301,
+    "skips": 18,
+    "excluded": 4,
+    "original_chain_head": "54a3c62ba71d95fe5113e6a9581db5e01ac157fb72a2482c1bb89cb4c86622d0",
+    "all_original_events_verified_byte_for_byte": true
+  },
+  "current": {
+    "events": 563,
+    "responses": 323,
+    "scored": 301,
+    "pending_backups": 0
+  },
+  "checks": {
+    "automated_tests": 20,
+    "staging_concurrent_duplicate_requests": 8,
+    "storage_failure_and_runtime_restart": true,
+    "browser_vote_reload_and_finish": true,
+    "production_test_votes": 0,
+    "private_off_provider_backup_run": "https://github.com/antoniofrancaib/owt-human-preference-backups/actions/runs/42242416568",
+    "backup_result": "success"
+  }
+}
