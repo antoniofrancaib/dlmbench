@@ -46,7 +46,7 @@ export class PreferenceStudy extends DurableObject {
       }
       if(!this.ready())return response({error:'The study is being prepared. Please return shortly.'},503);
       await this.mirror();
-      if(path==='/api/health')return response({ok:true,samples:13312,study_id:dataset.spec.id});
+      if(path==='/api/health')return response({ok:true,samples:dataset.spec.sample_count,sources:dataset.spec.source_count,excerpt_words:dataset.spec.excerpt_words,study_id:dataset.spec.id});
       if(path==='/api/admin/stats')return response(this.summary());
       if(path==='/api/admin/export'){
         const exp=this.engine.export(),format=url.searchParams.get('format');return format==='csv'?response(csv(exp),200,{'Content-Type':'text/csv; charset=utf-8','Content-Disposition':'attachment; filename="owt-responses.csv"'}):response(exp,200,{'Content-Disposition':'attachment; filename="owt-full-export.json"'});
@@ -61,12 +61,13 @@ export class PreferenceStudy extends DurableObject {
       await this.mirror();return response(result);
     }catch(e){if(e instanceof StudyError)return response({error:e.message},e.status);return response({error:'Saving could not be confirmed. Your pending choice stays in this browser; please retry.'},503);}
   }
-  summary(){return {...this.engine.leaderboard(),events:this.engine.events.length,responses:this.engine.votes.size,last_event_sha256:this.engine.previous,pending_backups:this.ctx.storage.sql.exec('SELECT COUNT(*) AS n FROM events WHERE mirrored=0').toArray()[0].n,ready:this.ready()};}
+  summary(){return {study_id:dataset.spec.id,excerpt_words:dataset.spec.excerpt_words,...this.engine.leaderboard(),events:this.engine.events.length,responses:this.engine.votes.size,last_event_sha256:this.engine.previous,pending_backups:this.ctx.storage.sql.exec('SELECT COUNT(*) AS n FROM events WHERE mirrored=0').toArray()[0].n,ready:this.ready()};}
 }
 
 export default {
   async fetch(request,env){
     const url=new URL(request.url),path=url.pathname;
+    if(env.STUDY_ID&&env.STUDY_ID!==dataset.spec.id)return response({error:'Study configuration mismatch.'},503);
     if(url.origin!==env.PUBLIC_ORIGIN)return response({error:'Use the published study address.'},403);
     const origin=request.headers.get('Origin');if(origin&&origin!==url.origin)return response({error:'Cross-origin requests are not accepted.'},403);
     const asset=path==='/'?'/index.html':path==='/admin'?'/admin.html':path;

@@ -2,7 +2,7 @@ import {readFileSync,writeFileSync} from 'node:fs';
 import {randomUUID} from 'node:crypto';
 import assert from 'node:assert/strict';
 const [url,secretsFile,output]=process.argv.slice(2);
-if(!url?.includes('owt-human-preference-staging.'))throw Error('Synthetic votes are restricted to staging.');
+if(!['https://owt-human-preference-staging.antoniofrancaib.workers.dev','https://owt-human-preference-100-staging.antoniofrancaib.workers.dev'].includes(url))throw Error('Synthetic votes are restricted to staging.');
 const secrets=JSON.parse(readFileSync(secretsFile));
 const admin=path=>fetch(url+path,{headers:{Authorization:'Bearer '+secrets.ADMIN_TOKEN}});
 const baseline=await(await admin('/api/admin/stats')).json();
@@ -13,6 +13,8 @@ const session=await fetch(url+'/api/session'),cookie=session.headers.get('set-co
 const get=path=>fetch(url+path,{headers:{Cookie:cookie}});
 const post=(path,body,origin=url)=>fetch(url+path,{method:'POST',headers:{Cookie:cookie,Origin:origin,'Content-Type':'application/json'},body:JSON.stringify(body)});
 let s=await(await get('/api/state')).json();
+const expectedWords=url.includes('-100-staging.')?100:35;
+assert.equal(s.study.excerpt_words,expectedWords);for(const side of ['a','b']){assert.ok(s.pair[side].word_count<=expectedWords);assert.equal(s.pair[side].text.split(' ').length,s.pair[side].word_count);}
 assert.equal(s.participant.id,pid);assert.deepEqual(s.rankings,[]);assert.equal(s.pair.a.bank_id,undefined);
 assert.equal((await get('/api/rankings')).status,403);
 const body={pair_id:s.pair.id,choice:'a',request_id:randomUUID(),participant_id:'forged'};

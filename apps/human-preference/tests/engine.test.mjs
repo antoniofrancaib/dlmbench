@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import dataset from '../generated/dataset.js';
 import {Engine,id,sha} from '../src/engine.js';
+import {loadStudy} from '../scripts/study-data.mjs';
 const pid=()=> 'anon_'+id();
 function fresh(){const e=new Engine(dataset);e.append('study_started',{codes:Object.fromEntries(e.ids.map((id,i)=>[id,String(i+1).padStart(2,'0')])),spec_sha256:dataset.specSha});e.append('response_policy_changed',{policy:'binary-v1'});return e;}
 test('balanced scheduling, anonymous responses and persisted replay',()=>{
@@ -24,7 +25,8 @@ test('corruption and wrong study are rejected before replay',()=>{
 });
 test('recovered collection has identical responses, exclusions and Elo', {skip:!process.env.RECOVERY_DIR},()=>{
  const root=process.env.RECOVERY_DIR,files=readdirSync(root+'/Human-Preference/data/Events').filter(x=>x.endsWith('.json')).sort(),raws=files.map(x=>readFileSync(root+'/Human-Preference/data/Events/'+x,'utf8'));
- const e=new Engine(dataset,raws),reference=JSON.parse(readFileSync(root+'/full-export.json'));
+ const original=loadStudy(new URL('../study/',import.meta.url).pathname);
+ const e=new Engine(original,raws),reference=JSON.parse(readFileSync(root+'/full-export.json'));
  assert.equal(e.events.length,561);assert.equal(e.votes.size,323);assert.equal(e.leaderboard().stats.votes,301);assert.equal(e.leaderboard().stats.excluded_votes,4);assert.equal(e.previous,reference.event_chain_last_sha256);
  for(const r of e.leaderboard().rankings){const old=reference.rankings.find(x=>x.id===r.id);assert.equal(r.rank,old.rank);assert.ok(Math.abs(r.elo-old.elo)<1e-10);assert.equal(r.matches,old.matches);}
  assert.deepEqual(raws,e.raws);assert.equal(sha(e.raws.at(-1)),reference.event_chain_last_sha256);

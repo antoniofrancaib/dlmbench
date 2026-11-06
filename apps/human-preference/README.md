@@ -1,8 +1,16 @@
 # OWT human preference collection
 
-Public study: https://owt-human-preference.antoniofrancaib.workers.dev
+Current 100-word study: https://owt-human-preference-100.antoniofrancaib.workers.dev
 
-The hosted study continues the original 13-source OWT experiment: 12 trained generators and the OWT train reference, 1,024 samples per source, and unchanged 35-word prefixes. It retains anonymous A/B preferences, skips, audited Undo, balanced source-pair exposure and sample selection, and browser-side pending-response retries.
+Original 35-word study: https://owt-human-preference.antoniofrancaib.workers.dev
+
+The original hosted study continues the original 13-source OWT experiment: 12 trained generators and the OWT train reference, 1,024 samples per source, and unchanged 35-word prefixes. It retains anonymous A/B preferences, skips, audited Undo, balanced source-pair exposure and sample selection, and browser-side pending-response retries.
+
+## Independent 100-word collection
+
+The 100-word study retains exactly the same 13 sources and 13,312 sample identities. Source-file checksums, every full-text hash and all original 35-word prefixes were verified before freezing the new excerpts. The full OWT reference bank was recovered from its original cluster path and matched SHA-256 `04a6ea24d31058ffe6d4d9b9295ee0e48c0cda087036007ae04cdc3c481f41fe`. Only whitespace is normalized: original artifacts and tokens remain. All 28 samples shorter than 100 words remain eligible without padding or filtering.
+
+Its frozen specification is `study-100/study.json`, ID `owt-prefix100-49227e8d7620eece`, cohort `hosted-prefix100-2026-11`. It starts with zero judgments and independent Elo. The 35-word Worker, event journal, sample banks, pending browser responses and rankings are preserved. Different hostnames isolate cookies and browser outboxes; different Durable Object namespaces and D1 study keys isolate journals. Correlations against existing full-length LLM assessments remain exploratory.
 
 ## Hosting and persistence
 
@@ -10,7 +18,7 @@ Cloudflare Workers serves the application and a single SQLite-backed Durable Obj
 
 Private backups outside Cloudflare run every six hours in `antoniofrancaib/owt-human-preference-backups`. The export-only token cannot import or mutate data. Each backup validates the hash chain and rejects any rewrite of an earlier snapshot. Git history retains older snapshots; the private repository also contains the original complete recovery ZIP. GitHub schedules can be delayed, so immediate durability comes from the two Cloudflare stores.
 
-The initial production import contained 561 events, 323 response rows and 301 scored judgments: 18 skips and four flagged imported exclusions. The preserved journal endpoint was `54a3c62ba71d95fe5113e6a9581db5e01ac157fb72a2482c1bb89cb4c86622d0`. Original events were verified byte for byte, and every original Elo score matched the retained Python reference to floating-point precision. Synthetic test responses belong only to staging.
+The initial 35-word production import contained 561 events, 323 response rows and 301 scored judgments: 18 skips and four flagged imported exclusions. The preserved journal endpoint was `54a3c62ba71d95fe5113e6a9581db5e01ac157fb72a2482c1bb89cb4c86622d0`. Original events were verified byte for byte, and every original Elo score matched the retained Python reference to floating-point precision. Synthetic test responses belong only to staging.
 
 ## Participant experience
 
@@ -29,7 +37,18 @@ npm test
 npx wrangler deploy --env ''
 ```
 
-`npm run build:data` verifies the frozen study and sample hashes before generating the server-only data module. Neither bank files nor raw journals are served as public static assets. Do not modify `study/study.json` or sample banks after collection starts.
+For the current 100-word collection:
+
+```sh
+npm run build:100
+npm test
+npx wrangler deploy --config wrangler.100.jsonc --env staging
+npm run deploy:100
+```
+
+Each Wrangler config invokes its own dataset build, and a runtime study-ID guard rejects a mismatched bundle. The default config continues to target 35 words; `wrangler.100.jsonc` targets 100 words. Synthetic hosted tests accept only the exact staging hostnames. Use `RECOVERY_DIR` when running tests to also verify the original recovered journal and Elo.
+
+`npm run build:data` verifies the frozen study and sample hashes before generating the server-only data module. Neither bank files nor raw journals are served as public static assets. Do not modify either frozen study specification or its sample banks after collection starts.
 
 Production uses the top-level Wrangler configuration. Staging is a separate Worker and Durable Object namespace and uses a separate key in the backup database. Use `--env staging` for test deployments. Never run synthetic voting tests against production. `scripts/verify-host.mjs` enforces the staging hostname. The storage test uses temporary local databases and exercises a backup outage plus full runtime restart.
 
@@ -38,3 +57,8 @@ Secrets `ADMIN_TOKEN`, `SESSION_SECRET`, and `BACKUP_TOKEN` are separate and are
 For recovery, decompress the latest private snapshot, validate its chain with `backup.py`, and submit its `event_raw` array to a new empty collection. Verify response counts and every original raw event before routing users to it. The original recovery ZIP includes frozen banks and the reference app. Keep one active production writer and never merge independent collections by overwriting sequence numbers.
 
 The source code belongs to `antoniofrancaib/dLMbench`; raw participant responses and secrets are excluded from this public repository. The copied historical Python implementation in `reference/server.py` is a validation reference, not the running service.
+
+
+The 100-word source-recovery ZIP and its `snapshots-100/` event exports are retained in the private backup repository; the original `snapshots/` remains separate. Each backup verifies its expected study identity as well as the complete journal chain and earlier snapshot prefix. New collections are initialized using `scripts/seed-study.mjs` and the owner import endpoint. Never regenerate a seed or reset a collection that has started collecting responses.
+
+To reproduce the new frozen dataset in a clean checkout, `scripts/create-prefix-study.py --reference /private/path/to/owt/samples.jsonl` requires the original full reference file. It verifies every source and refuses to overwrite `study-100/`; ordinarily use the committed frozen banks instead. The public source repository contains the 12 full generated banks; the original full reference and participant journals are kept in private storage.

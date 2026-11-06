@@ -4,6 +4,7 @@
   const PARTICIPANT_KEY = 'owt-human-preference-participant';
   const OUTBOX_KEY = 'owt-human-preference-pending-vote';
   const LOCK_NAME = 'owt-human-preference-outbox';
+  const excerptWords = Number($('excerpt-size').textContent) || 35;
   const RETRY_DELAYS = [1000, 2000, 4000, 8000, 16000, 30000];
   const createId = () => {
     if (globalThis.crypto?.randomUUID) return crypto.randomUUID();
@@ -261,10 +262,10 @@
       const pair = state.pair;
       for (const side of ['a', 'b']) {
         $(`sample-${side}`).textContent = pair?.[side]?.text ? pair[side].text + (pair[side].truncated ? ' …' : '') : 'Thank you. Your voting session is complete and your choices are saved.';
-        $(`sample-${side}-count`).textContent = pair ? `${pair[side].word_count ?? state.study?.excerpt_words ?? 35} WORDS` : '';
+        $(`sample-${side}-count`).textContent = pair ? `${pair[side].word_count ?? state.study?.excerpt_words ?? excerptWords} WORDS` : '';
       }
       for (const body of document.querySelectorAll('.sample-body')) body.scrollTop = 0;
-      $('excerpt-size').textContent = state.study?.excerpt_words ?? 35;
+      $('excerpt-size').textContent = state.study?.excerpt_words ?? excerptWords;
       $('source-count').textContent = state.study?.source_count ?? 13;
       $('available-samples').textContent = `${number(state.study?.sample_count || 13312)} samples in the study`;
       if (!pair) showSaved('You’ve completed the available comparisons. Thank you.');

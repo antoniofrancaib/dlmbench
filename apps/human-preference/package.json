@@ -4,10 +4,12 @@
   "type": "module",
   "scripts": {
     "build:data": "node scripts/build-data.mjs",
-    "build": "npm run build:data && wrangler deploy --dry-run --outdir dist",
+    "build": "wrangler deploy --env '' --dry-run --outdir dist",
     "test": "node --test tests/*.test.mjs && node --test test_frontend_outbox.cjs",
     "dev": "wrangler dev",
-    "deploy": "npm run build:data && wrangler deploy"
+    "deploy": "wrangler deploy --env ''",
+    "build:100": "wrangler deploy --config wrangler.100.jsonc --env '' --dry-run --outdir dist",
+    "deploy:100": "wrangler deploy --config wrangler.100.jsonc --env ''"
   },
   "devDependencies": {
     "miniflare": "5.20261006.1-alpha",

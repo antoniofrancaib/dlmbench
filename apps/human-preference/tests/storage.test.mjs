@@ -9,7 +9,7 @@ import {Engine,id} from '../src/engine.js';
 
 test('two-copy acknowledgement survives backup outage and a full runtime restart',async()=>{
  const dir=await mkdtemp(join(tmpdir(),'owt-storage-test-'));
- const config={workers:[{name:'test-worker',modules:true,scriptPath:new URL('../dist/worker.js',import.meta.url).pathname,compatibilityDate:'2026-10-13',compatibilityFlags:['nodejs_compat'],durableObjects:{STUDY:{className:'PreferenceStudy',useSQLite:true}},d1Databases:{BACKUP:'test-backup'},bindings:{STUDY_KEY:'test',PUBLIC_ORIGIN:'http://localhost',ADMIN_TOKEN:'owner',SESSION_SECRET:'session',BACKUP_TOKEN:'backup'}}],resourcePersistencePath:dir};
+ const config={workers:[{name:'test-worker',modules:true,scriptPath:new URL('../dist/worker.js',import.meta.url).pathname,compatibilityDate:'2026-10-13',compatibilityFlags:['nodejs_compat'],durableObjects:{STUDY:{className:'PreferenceStudy',useSQLite:true}},d1Databases:{BACKUP:'test-backup'},bindings:{STUDY_ID:dataset.spec.id,STUDY_KEY:'test',PUBLIC_ORIGIN:'http://localhost',ADMIN_TOKEN:'owner',SESSION_SECRET:'session',BACKUP_TOKEN:'backup'}}],resourcePersistencePath:dir};
  let mf=new Miniflare(convertV4MiniflareOptions(config));
  const call=(path,init={})=>mf.dispatchFetch('http://localhost'+path,init);
  try{

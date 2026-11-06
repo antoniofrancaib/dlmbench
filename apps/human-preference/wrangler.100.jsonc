@@ -1,0 +1,81 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "owt-human-preference-100",
+  "account_id": "71c46b0d5111b56c2bd712c21dc183c5",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-13",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "preview_urls": false,
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "STUDY",
+        "class_name": "PreferenceStudy"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "PreferenceStudy"
+      ]
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "BACKUP",
+      "database_name": "owt-human-preference-backup",
+      "database_id": "0b878ec7-0b0b-4e58-ad3e-83136ff5a356"
+    }
+  ],
+  "vars": {
+    "STUDY_KEY": "owt-prefix100-49227e8d7620eece",
+    "STUDY_ID": "owt-prefix100-49227e8d7620eece",
+    "PUBLIC_ORIGIN": "https://owt-human-preference-100.antoniofrancaib.workers.dev"
+  },
+  "rules": [
+    {
+      "type": "Text",
+      "globs": [
+        "**/*.html",
+        "**/*.css"
+      ],
+      "fallthrough": true
+    }
+  ],
+  "observability": {
+    "enabled": false
+  },
+  "env": {
+    "staging": {
+      "name": "owt-human-preference-100-staging",
+      "durable_objects": {
+        "bindings": [
+          {
+            "name": "STUDY",
+            "class_name": "PreferenceStudy"
+          }
+        ]
+      },
+      "d1_databases": [
+        {
+          "binding": "BACKUP",
+          "database_name": "owt-human-preference-backup",
+          "database_id": "0b878ec7-0b0b-4e58-ad3e-83136ff5a356"
+        }
+      ],
+      "vars": {
+        "STUDY_KEY": "staging-owt-prefix100-49227e8d7620eece",
+        "STUDY_ID": "owt-prefix100-49227e8d7620eece",
+        "PUBLIC_ORIGIN": "https://owt-human-preference-100-staging.antoniofrancaib.workers.dev"
+      }
+    }
+  },
+  "build": {
+    "command": "node scripts/build-data.mjs study-100"
+  }
+}

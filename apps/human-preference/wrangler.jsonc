@@ -4,19 +4,78 @@
   "account_id": "71c46b0d5111b56c2bd712c21dc183c5",
   "main": "src/worker.js",
   "compatibility_date": "2026-10-13",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
   "workers_dev": true,
   "preview_urls": false,
-  "durable_objects": {"bindings": [{"name":"STUDY","class_name":"PreferenceStudy"}]},
-  "migrations": [{"tag":"v1","new_sqlite_classes":["PreferenceStudy"]}],
-  "d1_databases": [{"binding":"BACKUP","database_name":"owt-human-preference-backup","database_id":"0b878ec7-0b0b-4e58-ad3e-83136ff5a356"}],
-  "vars": {"STUDY_KEY":"owt-prefix35-0d642ac501d13536","PUBLIC_ORIGIN":"https://owt-human-preference.antoniofrancaib.workers.dev"},
-  "rules": [{"type":"Text","globs":["**/*.html","**/*.css"],"fallthrough":true}],
-  "observability": {"enabled": false},
-  "env": {"staging": {
-    "name":"owt-human-preference-staging",
-    "durable_objects":{"bindings":[{"name":"STUDY","class_name":"PreferenceStudy"}]},
-    "d1_databases":[{"binding":"BACKUP","database_name":"owt-human-preference-backup","database_id":"0b878ec7-0b0b-4e58-ad3e-83136ff5a356"}],
-    "vars":{"STUDY_KEY":"staging-20261106","PUBLIC_ORIGIN":"https://owt-human-preference-staging.antoniofrancaib.workers.dev"}
-  }}
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "STUDY",
+        "class_name": "PreferenceStudy"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": [
+        "PreferenceStudy"
+      ]
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "BACKUP",
+      "database_name": "owt-human-preference-backup",
+      "database_id": "0b878ec7-0b0b-4e58-ad3e-83136ff5a356"
+    }
+  ],
+  "vars": {
+    "STUDY_KEY": "owt-prefix35-0d642ac501d13536",
+    "PUBLIC_ORIGIN": "https://owt-human-preference.antoniofrancaib.workers.dev",
+    "STUDY_ID": "owt-prefix35-0d642ac501d13536"
+  },
+  "rules": [
+    {
+      "type": "Text",
+      "globs": [
+        "**/*.html",
+        "**/*.css"
+      ],
+      "fallthrough": true
+    }
+  ],
+  "observability": {
+    "enabled": false
+  },
+  "env": {
+    "staging": {
+      "name": "owt-human-preference-staging",
+      "durable_objects": {
+        "bindings": [
+          {
+            "name": "STUDY",
+            "class_name": "PreferenceStudy"
+          }
+        ]
+      },
+      "d1_databases": [
+        {
+          "binding": "BACKUP",
+          "database_name": "owt-human-preference-backup",
+          "database_id": "0b878ec7-0b0b-4e58-ad3e-83136ff5a356"
+        }
+      ],
+      "vars": {
+        "STUDY_KEY": "staging-20261106",
+        "PUBLIC_ORIGIN": "https://owt-human-preference-staging.antoniofrancaib.workers.dev",
+        "STUDY_ID": "owt-prefix35-0d642ac501d13536"
+      }
+    }
+  },
+  "build": {
+    "command": "node scripts/build-data.mjs study"
+  }
 }

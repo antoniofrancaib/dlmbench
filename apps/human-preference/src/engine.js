@@ -22,7 +22,7 @@ function rho(a,b){if(a.length<3)return null;const x=ranks(a),y=ranks(b),mean=(a.
 
 export class Engine {
   constructor(dataset,raws=[],persist=()=>{}) {
-    this.dataset=dataset;this.spec=dataset.spec;this.banks=dataset.banks;this.ids=Object.keys(this.banks).sort();
+    this.dataset=dataset;this.spec=dataset.spec;this.cohort=this.spec.cohort||'hosted-2026-11';this.banks=dataset.banks;this.ids=Object.keys(this.banks).sort();
     this.events=[];this.raws=[];this.previous=null;this.participants=new Map();this.pairs=new Map();this.votes=new Map();this.requests=new Map();this.imports=[];this.codes={};this.persist=persist;
     for(const raw of raws){const e=verifyRaw(raw,this.events.length+1,this.previous,this.spec.id);this.apply(e);this.events.push(e);this.raws.push(raw);this.previous=sha(raw);}
     if(raws.length && this.events[0].payload.spec_sha256!==dataset.specSha)throw Error('Frozen study hash mismatch');
@@ -46,7 +46,7 @@ export class Engine {
     case 'hosting_migrated':break;
     default:throw Error('Unknown journal event '+e.type);
   }}
-  participant(pid){if(!/^anon_[a-f0-9]{32}$/.test(pid))throw new StudyError('Invalid session.',401);if(!this.participants.has(pid))this.append('participant',{id:pid,name:'Anonymous',cohort:'hosted-2026-11'});return this.participants.get(pid);}
+  participant(pid){if(!/^anon_[a-f0-9]{32}$/.test(pid))throw new StudyError('Invalid session.',401);if(!this.participants.has(pid))this.append('participant',{id:pid,name:'Anonymous',cohort:this.cohort});return this.participants.get(pid);}
   active(pid){return [...this.votes.values()].filter(v=>!v.undone&&(!pid||v.participant_id===pid));}
   next(pid){
     if(this.participants.get(pid).finished)return null;
@@ -56,7 +56,7 @@ export class Engine {
     let options=[],lowest=[Infinity,Infinity];for(let i=0;i<this.ids.length;i++)for(let j=i+1;j<this.ids.length;j++){const a=this.ids[i],b=this.ids[j],priority=[pc.get(a+'|'+b)||0,sc[a]+sc[b]];if(priority[0]<lowest[0]||(priority[0]===lowest[0]&&priority[1]<lowest[1])){lowest=priority;options=[];}if(priority[0]===lowest[0]&&priority[1]===lowest[1])options.push([a,b]);}
     const seed=id(),random=rng(seed),selected=[...options[random(options.length)]];if(random(2))selected.reverse();
     const sides=selected.map(bank=>{const samples=this.banks[bank].samples,min=Math.min(...samples.map(s=>seen[bank].get(s.index)||0)),eligible=samples.filter(s=>(seen[bank].get(s.index)||0)===min);return {...eligible[random(eligible.length)],bank_id:bank,bank_sha256:this.banks[bank].source_sha256};});
-    const p={id:id(),participant_id:pid,seed,sampler_version:'balanced-xoshiro128ss-v1',a:sides[0],b:sides[1],revealed_at_assignment:false,excerpt_words:35,response_policy:'binary-v1',cohort:'hosted-2026-11'};
+    const p={id:id(),participant_id:pid,seed,sampler_version:'balanced-xoshiro128ss-v1',a:sides[0],b:sides[1],revealed_at_assignment:false,excerpt_words:this.spec.excerpt_words,response_policy:'binary-v1',cohort:this.cohort};
     this.append('pair_assigned',p);return this.pairs.get(p.id);
   }
   leaderboard(){
@@ -64,11 +64,11 @@ export class Engine {
     for(const v of this.active()){const s=choices[v.choice];if(s==null||v.include_in_elo===false)continue;const p=this.pairs.get(v.pair_id),a=rows[p.a.bank_id],b=rows[p.b.bank_id],expected=1/(1+10**Math.max(-300,Math.min(300,(b.elo-a.elo)/400))),delta=this.spec.elo.k*(s-expected);a.elo+=delta;b.elo-=delta;for(const [r,score]of [[a,s],[b,1-s]]){r.matches++;r[score===1?'wins':score===0?'losses':'ties']++;}pairs.add([a.id,b.id].sort().join('|'));count++;}
     const rankings=Object.values(rows).sort((a,b)=>(!a.matches)-(!b.matches)||b.elo-a.elo||a.code.localeCompare(b.code));let last=null,rank=null;rankings.forEach((r,i)=>{if(r.elo!==last)rank=i+1;r.rank=r.matches?rank:null;last=r.elo;});
     const recorded=this.active().filter(v=>v.choice!=='skip');
-    return {rankings,stats:{recorded_votes:recorded.length,excluded_votes:recorded.filter(v=>v.include_in_elo===false).length,imported_votes:recorded.filter(v=>v.origin==='external_csv').length,votes:count,pairs_covered:pairs.size,total_pairs:78,participants:new Set(recorded.map(v=>v.participant_id)).size,sources_rated:rankings.filter(r=>r.matches).length,min_matches:Math.min(...rankings.map(r=>r.matches))}};
+    return {rankings,stats:{recorded_votes:recorded.length,excluded_votes:recorded.filter(v=>v.include_in_elo===false).length,imported_votes:recorded.filter(v=>v.origin==='external_csv').length,votes:count,pairs_covered:pairs.size,total_pairs:this.ids.length*(this.ids.length-1)/2,participants:new Set(recorded.map(v=>v.participant_id)).size,sources_rated:rankings.filter(r=>r.matches).length,min_matches:Math.min(...rankings.map(r=>r.matches))}};
   }
   state(pid,includePair=true){
     const p=this.participant(pid),pair=includePair?this.next(pid):null,board=this.leaderboard(),active=this.active(pid),last=active.at(-1),rated=board.rankings.filter(r=>r.matches),generated=rated.filter(r=>r.id!==this.spec.reference_id);
-    const result={study:{id:this.spec.id,title:this.spec.title,excerpt_words:35,source_count:13,sample_count:13312,response_policy:'binary-v1'},participant:{id:pid,votes:active.filter(v=>v.choice!=='skip').length,can_undo:!p.finished&&!!last&&last.origin!=='external_csv',can_finish:active.length>0,finished:!!p.finished},stats:board.stats,revealed:!!p.finished,rankings:p.finished?board.rankings.map(({id,...r})=>r):[],correlations:p.finished?Object.keys(Object.values(this.spec.llm_ratings)[0]).map(judge=>({judge,rho:rho(rated.map(r=>r.elo),rated.map(r=>this.spec.llm_ratings[r.id][judge])),n:rated.length,rho_generators:rho(generated.map(r=>r.elo),generated.map(r=>this.spec.llm_ratings[r.id][judge])),n_generators:generated.length,warning:this.spec.llm_source.caveat})):[]};
+    const result={study:{id:this.spec.id,title:this.spec.title,excerpt_words:this.spec.excerpt_words,source_count:this.ids.length,sample_count:this.spec.sample_count,response_policy:'binary-v1'},participant:{id:pid,votes:active.filter(v=>v.choice!=='skip').length,can_undo:!p.finished&&!!last&&last.origin!=='external_csv',can_finish:active.length>0,finished:!!p.finished},stats:board.stats,revealed:!!p.finished,rankings:p.finished?board.rankings.map(({id,...r})=>r):[],correlations:p.finished?Object.keys(Object.values(this.spec.llm_ratings)[0]).map(judge=>({judge,rho:rho(rated.map(r=>r.elo),rated.map(r=>this.spec.llm_ratings[r.id][judge])),n:rated.length,rho_generators:rho(generated.map(r=>r.elo),generated.map(r=>this.spec.llm_ratings[r.id][judge])),n_generators:generated.length,warning:this.spec.llm_source.caveat})):[]};
     result.participant.last_vote_id=last?.id||null;
     if(includePair)result.pair=pair?{id:pair.id,...Object.fromEntries(['a','b'].map(s=>[s,Object.fromEntries(['text','word_count','truncated'].map(k=>[k,pair[s][k]]))]))}:null;
     return result;
@@ -84,10 +84,10 @@ export class Engine {
     if(pair.status!=='pending'){
       const old=this.active(pid).filter(v=>v.pair_id===pair_id).at(-1);if(!old||old.choice!==choice)throw new StudyError('This comparison was already answered.',409);
       this.append('request_acknowledged',{participant_id:pid,pair_id,choice,request_id,vote_id:old.id});
-    }else this.append('vote',{participant_id:pid,participant_name:'Anonymous',pair_id,choice,score_a:choices[choice],request_id,response_policy:'binary-v1',elapsed_ms:Math.max(0,Date.now()-Date.parse(pair.assigned_at)),revealed_at_vote:false,cohort:'hosted-2026-11'});
+    }else this.append('vote',{participant_id:pid,participant_name:'Anonymous',pair_id,choice,score_a:choices[choice],request_id,response_policy:'binary-v1',elapsed_ms:Math.max(0,Date.now()-Date.parse(pair.assigned_at)),revealed_at_vote:false,cohort:this.cohort});
     return {...this.state(pid),acknowledged_request_id:request_id};
   }
   undo(pid,body){const p=this.participant(pid);if(p.finished)throw new StudyError('This session is finished.',409);const v=this.votes.get(body.vote_id);if(!v||v.participant_id!==pid||v.origin==='external_csv')throw new StudyError('Cannot undo this response.',409);if(v.undone)return this.state(pid);if(this.active(pid).at(-1)?.id!==v.id)throw new StudyError('Only the most recent response can be undone.',409);this.append('undo',{participant_id:pid,vote_id:v.id});return this.state(pid);}
-  finish(pid){const p=this.participant(pid);if(!this.active(pid).length)throw new StudyError('Save at least one comparison before finishing.');if(!p.finished)this.append('participant_finished',{participant_id:pid,cohort:'hosted-2026-11'});return this.state(pid);}
+  finish(pid){const p=this.participant(pid);if(!this.active(pid).length)throw new StudyError('Save at least one comparison before finishing.');if(!p.finished)this.append('participant_finished',{participant_id:pid,cohort:this.cohort});return this.state(pid);}
   export(){return {exported_at:new Date().toISOString(),study:this.spec,code_map:this.codes,current_response_policy:'binary-v1',...this.leaderboard(),events:this.events,event_raw:this.raws,event_chain_last_sha256:this.previous,votes:[...this.votes.values()],assignments:[...this.pairs.values()],imports:this.imports};}
 }

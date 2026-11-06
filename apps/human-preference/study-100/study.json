@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "title": "OWT Human Preference · 100 words",
+  "dataset": "OpenWebText",
+  "excerpt_words": 100,
+  "excerpt_rule": "First 100 whitespace-delimited words, whitespace joined by one space; shorter samples retained unchanged; original tokens and artifacts retained; ellipsis shown only for truncation.",
+  "source_count": 13,
+  "sample_count": 13312,
+  "banks": [
+    {
+      "id": "owt_v2_mdlm_1024_nfe",
+      "label": "MDLM 1024-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_mdlm_1024_nfe/samples.jsonl",
+      "source_sha256": "1b79aca4bd23115f4504c022380106ced37244bc9982761ad16b089f836f4131",
+      "source_bytes": 4771082,
+      "file": "banks/owt_v2_mdlm_1024_nfe.json",
+      "sha256": "4cf723d9a2146db619174be2df457634c97197f93e9bc7b4c572e284dcdd98a0",
+      "count": 1024
+    },
+    {
+      "id": "owt_sdtt_mdlm_teacher_1024_nfe",
+      "label": "SDTT Teacher 1024",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_sdtt_mdlm_teacher_1024_nfe/samples.jsonl",
+      "source_sha256": "f4557c25d6e9174fc9d5f33f35ff84ec8f6bcc1435a5bf0eb1a5c03a67c4ad52",
+      "source_bytes": 4575098,
+      "file": "banks/owt_sdtt_mdlm_teacher_1024_nfe.json",
+      "sha256": "00b9d15d34b7274919471364f9aba8f76e6198068c919896e3ef91681e544c6f",
+      "count": 1024
+    },
+    {
+      "id": "owt_ar_base",
+      "label": "AR baseline",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_ar_base/samples.jsonl",
+      "source_sha256": "7a533df5bd765f86e040cf8b62f219d06e69e6316bbd310d8300eea68dc0a58b",
+      "source_bytes": 4761745,
+      "file": "banks/owt_ar_base.json",
+      "sha256": "4b8ec7dc965fd6ce8248f26a9f416eb7c1be05b4b697445ab08675e9d2e97d4e",
+      "count": 1024
+    },
+    {
+      "id": "owt_v2_fmlm_32_nfe",
+      "label": "FMLM 32-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_fmlm_32_nfe/samples.jsonl",
+      "source_sha256": "eae0e16c5579c0285320091c941ad8d5140dad68c04f6b678f9995bc8fe143ce",
+      "source_bytes": 4540250,
+      "file": "banks/owt_v2_fmlm_32_nfe.json",
+      "sha256": "08c256d8d6fdd77b5368dadad81aed72834e1ae0f99b234c5fefed98d28eab9e",
+      "count": 1024
+    },
+    {
+      "id": "owt_langflow_1024_nfe",
+      "label": "LangFlow 1024-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_langflow_1024_nfe/samples.jsonl",
+      "source_sha256": "d907c2d665174f0ef2145edc03bce4527541396e9828b052fd37c104ffe6a698",
+      "source_bytes": 4553624,
+      "file": "banks/owt_langflow_1024_nfe.json",
+      "sha256": "0a979ac9343080cc3e91c9988ac34fff4169633d052c0d6649b4ed957f71f354",
+      "count": 1024
+    },
+    {
+      "id": "owt_v2_replaid_nosc_ddpm_1024_nfe",
+      "label": "RePlaid 1024-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_replaid_nosc_ddpm_1024_nfe/samples.jsonl",
+      "source_sha256": "518d2d10ce436833160df99bb88e859fee5f2682a79fed3d7431625e5d4424ad",
+      "source_bytes": 4673130,
+      "file": "banks/owt_v2_replaid_nosc_ddpm_1024_nfe.json",
+      "sha256": "6e20c73cc604bd9a120609b73d0af1a10d13653accb60e5db7c6e68b3970af90",
+      "count": 1024
+    },
+    {
+      "id": "owt_v2_plaid_1024_nfe",
+      "label": "Plaid 1024-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_plaid_1024_nfe/samples.jsonl",
+      "source_sha256": "1058c429d4fa62f716c3cf08e01976e03e907ab6cb37e2361814ab434d303ecd",
+      "source_bytes": 4987721,
+      "file": "banks/owt_v2_plaid_1024_nfe.json",
+      "sha256": "a68c178c9af103c32f87a26cbd11505771fb926de4c84b806e09d964cf078a02",
+      "count": 1024
+    },
+    {
+      "id": "owt_v2_elf_m_64_nfe",
+      "label": "ELF-M 64-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_elf_m_64_nfe/samples.jsonl",
+      "source_sha256": "5663500f2d51c7b3673dc80aeec1509c87a734bfd40dc1c6c08bb174976f148c",
+      "source_bytes": 4489727,
+      "file": "banks/owt_v2_elf_m_64_nfe.json",
+      "sha256": "667242faa91daf5d96fcf7cdf254919df2a566cc19a112e555f3300b223b9273",
+      "count": 1024
+    },
+    {
+      "id": "owt_data_train",
+      "label": "Reference (OWT train)",
+      "source_path": "/mnt/storage01/netscratch/afranca/dlmbench-scorers-20260803/references/owt/samples.jsonl",
+      "source_sha256": "04a6ea24d31058ffe6d4d9b9295ee0e48c0cda087036007ae04cdc3c481f41fe",
+      "source_bytes": 5033499,
+      "file": "banks/owt_data_train.json",
+      "sha256": "8d8c1c2385fa6b2712e4e53a020e23824b4bd1c02b652d01fa371cc359ebde1d",
+      "count": 1024
+    },
+    {
+      "id": "owt_v2_flm_1024_nfe",
+      "label": "FLM 1024-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_flm_1024_nfe/samples.jsonl",
+      "source_sha256": "34b405717a098608ec51c675137622e43b0f6b492028dd5a30fa195b9fc40a95",
+      "source_bytes": 4379935,
+      "file": "banks/owt_v2_flm_1024_nfe.json",
+      "sha256": "9d5b824de804fa36f7fdbd87c4dab2b92597cec98816c085939a8dd6134fc983",
+      "count": 1024
+    },
+    {
+      "id": "owt_v2_sedd_1024_nfe",
+      "label": "SEDD 1024-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_sedd_1024_nfe/samples.jsonl",
+      "source_sha256": "b8c55ee56ca2e01261f7adf0cd45fad85445ff2bc74e9825064670527a46ea41",
+      "source_bytes": 4728658,
+      "file": "banks/owt_v2_sedd_1024_nfe.json",
+      "sha256": "7a75323b506607cd49ca24117028a136c3ca97ed822db7fdf30a44e3ae2830c2",
+      "count": 1024
+    },
+    {
+      "id": "owt_v2_duo_base_1024_nfe",
+      "label": "Duo 1024-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_duo_base_1024_nfe/samples.jsonl",
+      "source_sha256": "581f702bae92041ea7eaa746eefba893e199f31a276a0104e4ab990f14817f24",
+      "source_bytes": 4606427,
+      "file": "banks/owt_v2_duo_base_1024_nfe.json",
+      "sha256": "fb6a4d88383c623040eea06b9a03e22803db4ecdd960a78b4a75ad0fb20c3dfe",
+      "count": 1024
+    },
+    {
+      "id": "owt_v2_cobit_m_256_nfe",
+      "label": "CoBit-M 256-NFE",
+      "source_path": "/mnt/storage01/home/afranca/dLMbench/data/samples/owt/owt_v2_cobit_m_256_nfe/samples.jsonl",
+      "source_sha256": "0482d3b8b886f29f17ab9141b2302a635b54b2f3523fb2d523be18d36e89c2ee",
+      "source_bytes": 4750009,
+      "file": "banks/owt_v2_cobit_m_256_nfe.json",
+      "sha256": "84aa7599c6c814f2e0e7225e7374c717c20a79e7a0ef589ad5e3ce91169971ae",
+      "count": 1024
+    }
+  ],
+  "elo": {
+    "initial": 1500,
+    "k": 32,
+    "tie_score": 0.5
+  },
+  "sampling": "Uniform random source pair among least-exposed pairs per participant; fewer total source exposures breaks ties. Uniform random sample among least-exposed records per source per participant. Random A/B orientation; seeds and assignments persisted. Skips count for exposure but not Elo.",
+  "eligibility": "Exactly the 12 trained generators plus OWT train reference in Table 2; no naive samplers, no LM1B, no alternate NFE banks.",
+  "reference_id": "owt_data_train",
+  "llm_ratings": {
+    "owt_data_train": {
+      "DeepSeek": 2091.0,
+      "GPT-5.4 Nano": 1835.0,
+      "Nemotron": 2553.0
+    },
+    "owt_ar_base": {
+      "DeepSeek": 1555.0,
+      "GPT-5.4 Nano": 1626.0,
+      "Nemotron": 1681.0
+    },
+    "owt_v2_mdlm_1024_nfe": {
+      "DeepSeek": 1450.0,
+      "GPT-5.4 Nano": 1489.0,
+      "Nemotron": 1505.0
+    },
+    "owt_sdtt_mdlm_teacher_1024_nfe": {
+      "DeepSeek": 1514.0,
+      "GPT-5.4 Nano": 1451.0,
+      "Nemotron": 1548.0
+    },
+    "owt_v2_sedd_1024_nfe": {
+      "DeepSeek": 1513.0,
+      "GPT-5.4 Nano": 1451.0,
+      "Nemotron": 1477.0
+    },
+    "owt_v2_flm_1024_nfe": {
+      "DeepSeek": 1492.0,
+      "GPT-5.4 Nano": 1429.0,
+      "Nemotron": 1495.0
+    },
+    "owt_v2_fmlm_32_nfe": {
+      "DeepSeek": 1513.0,
+      "GPT-5.4 Nano": 1469.0,
+      "Nemotron": 1565.0
+    },
+    "owt_langflow_1024_nfe": {
+      "DeepSeek": 1511.0,
+      "GPT-5.4 Nano": 1564.0,
+      "Nemotron": 1527.0
+    },
+    "owt_v2_duo_base_1024_nfe": {
+      "DeepSeek": 1472.0,
+      "GPT-5.4 Nano": 1491.0,
+      "Nemotron": 1447.0
+    },
+    "owt_v2_replaid_nosc_ddpm_1024_nfe": {
+      "DeepSeek": 1540.0,
+      "GPT-5.4 Nano": 1481.0,
+      "Nemotron": 1513.0
+    },
+    "owt_v2_plaid_1024_nfe": {
+      "DeepSeek": 1761.0,
+      "GPT-5.4 Nano": 1767.0,
+      "Nemotron": 2026.0
+    },
+    "owt_v2_elf_m_64_nfe": {
+      "DeepSeek": 1536.0,
+      "GPT-5.4 Nano": 1667.0,
+      "Nemotron": 1817.0
+    },
+    "owt_v2_cobit_m_256_nfe": {
+      "DeepSeek": 1527.0,
+      "GPT-5.4 Nano": 1516.0,
+      "Nemotron": 1691.0
+    }
+  },
+  "llm_source": {
+    "path": "Scratchpad/DLM-Bench/Lab/Pages/scalable-llm-judges/Views/result-table-d65420a8e616/Data/6e646782e6c1-pairwise-primary.json",
+    "sha256": "6e646782e6c1762c201dd682c22d9a74153e88d86a6134dbb9d05007f57f9d96",
+    "aliases": {
+      "owt_mdlm_1024_nfe": "owt_v2_mdlm_1024_nfe",
+      "owt_sedd_1024_nfe": "owt_v2_sedd_1024_nfe",
+      "owt_duo_1024_nfe": "owt_v2_duo_base_1024_nfe"
+    },
+    "precision": "rounded published Elo",
+    "caveat": "Existing judges assessed full-length samples and a wider cohort. Human ratings use up-to-100-word prefixes and 13 sources; correlations are exploratory and not matched-excerpt agreement."
+  },
+  "protocol": "Judge the fluency, coherence and overall quality of the displayed excerpts. Prefer the text that reads better; choose A or B, or Skip if you cannot decide. Judge only the visible excerpt. These are independent unconditional samples, not responses to a shared prompt.",
+  "id": "owt-prefix100-49227e8d7620eece",
+  "cohort": "hosted-prefix100-2026-11",
+  "predecessor_study_id": "owt-prefix35-0d642ac501d13536",
+  "collection_policy": "Independent collection and Elo ratings; no responses from the 35-word study are pooled into this study.",
+  "source_repository": {
+    "url": "https://github.com/antoniofrancaib/dlmbench/tree/f3f3eb64322a2ab3b1fc7aa85e295cc70b9d0b6e/samples",
+    "commit": "f3f3eb64322a2ab3b1fc7aa85e295cc70b9d0b6e",
+    "reference": "Recovered separately from the original reference bank; verified against its frozen source checksum and all 1,024 full-text hashes."
+  },
+  "short_sample_counts": {
+    "owt_v2_mdlm_1024_nfe": 1,
+    "owt_sdtt_mdlm_teacher_1024_nfe": 1,
+    "owt_ar_base": 1,
+    "owt_v2_fmlm_32_nfe": 0,
+    "owt_langflow_1024_nfe": 2,
+    "owt_v2_replaid_nosc_ddpm_1024_nfe": 6,
+    "owt_v2_plaid_1024_nfe": 7,
+    "owt_v2_elf_m_64_nfe": 0,
+    "owt_data_train": 0,
+    "owt_v2_flm_1024_nfe": 0,
+    "owt_v2_sedd_1024_nfe": 0,
+    "owt_v2_duo_base_1024_nfe": 1,
+    "owt_v2_cobit_m_256_nfe": 9
+  }
+}
